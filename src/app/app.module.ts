@@ -12,7 +12,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
-import { ChambreComponent } from './pages/chambre/chambre/chambre.component';
+
 
 
 @NgModule({
@@ -29,7 +29,7 @@ import { ChambreComponent } from './pages/chambre/chambre/chambre.component';
     AppComponent,
     AdminLayoutComponent,
     AuthLayoutComponent,
-    ChambreComponent
+
   ],
   providers: [],
   bootstrap: [AppComponent]
