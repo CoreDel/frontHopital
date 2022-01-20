@@ -12,8 +12,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
-import { MedicamentComponent } from './pages/medicament/medicament/medicament.component';
-import { OrdonnanceComponent } from './pages/ordonnance/ordonnance.component';
+
 
 
 @NgModule({
@@ -30,8 +29,7 @@ import { OrdonnanceComponent } from './pages/ordonnance/ordonnance.component';
     AppComponent,
     AdminLayoutComponent,
     AuthLayoutComponent,
-    MedicamentComponent,
-    OrdonnanceComponent
+
   ],
   providers: [],
   bootstrap: [AppComponent]
