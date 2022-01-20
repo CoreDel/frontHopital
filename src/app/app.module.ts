@@ -12,6 +12,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
+import { MedicamentComponent } from './pages/medicament/medicament/medicament.component';
+import { OrdonnanceComponent } from './pages/ordonnance/ordonnance.component';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { ComponentsModule } from './components/components.module';
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    AuthLayoutComponent
+    AuthLayoutComponent,
+    MedicamentComponent,
+    OrdonnanceComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
