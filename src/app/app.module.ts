@@ -20,6 +20,8 @@ import { FactureComponent } from './pages/facture/facture.component';
 import { HopitalComponent } from './pages/hopital/hopital.component';
 import { ChambreComponent } from './pages/chambre/chambre.component';
 import { MedicamentComponent } from './pages/medicament/medicament.component';
+import { UtilisateurComponent } from './pages/utilisateur/utilisateur.component';
+import { DossiermedicalComponent } from './pages/dossiermedical/dossiermedical.component';
 
 
 
@@ -47,6 +49,8 @@ import { MedicamentComponent } from './pages/medicament/medicament.component';
     HopitalComponent,
     ChambreComponent,
     MedicamentComponent,
+    UtilisateurComponent,
+    DossiermedicalComponent,
 
 
   ],

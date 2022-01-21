@@ -25,5 +25,4 @@ export class UtilisateurComponent implements OnInit {
   saveUtilisateur(){
     this.utilisateurService.saveUser(this.utilisateur).subscribe(() => {this.findAll(); this.utilisateur = new Utilisateur();});
   }
-
 }
