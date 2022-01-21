@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Role } from 'src/app/model/role';
+import { RoleService } from 'src/app/service/role.service';
 
 @Component({
   selector: 'app-role',
@@ -6,10 +8,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./role.component.scss']
 })
 export class RoleComponent implements OnInit {
-
-  constructor() { }
+  roles: any;
+  role: Role=new Role();
+  constructor(private roleService:RoleService) { }
 
   ngOnInit(): void {
+    this.findAll();
   }
 
+  findAll(){
+    this.roleService.findAll().subscribe(data =>{this.roles = data});
+  // subscribe : rafraichit la table
+  }
+  deleteRole(id:number){
+    this.roleService.deleteRole(id).subscribe( () =>{this.findAll()} );
+  }
+
+  saveRole(){
+    this.roleService.saveRole(this.role).subscribe( () => {
+      this.findAll(); // mettre à jour la table
+      this.role = new Role(); // pour vider le formulaire
+    })
+  }
 }

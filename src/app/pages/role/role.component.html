@@ -1,1 +1,22 @@
-<p>role works!</p>
+<div>
+    <h1>Ajouter un role</h1>
+    <form>
+        <label>Libelle</label>
+        <input type="text" [(ngModel)]="role.libelle" name="libelle"/>
+        <button type="button" (click)="saveRole()">Ajouter</button>
+    </form>
+</div>
+<div>
+<table>
+    <tr>
+        <th>Libelle</th>
+        <th>Action</th>
+    </tr>
+    <tr *ngFor="let r of roles">
+        <td>{{r.libelle}}</td>
+        <td>
+            <button type="button" (click)="deleteRole(r.idRole)">Delete</button>
+        </td>
+    </tr>
+</table>
+</div>
