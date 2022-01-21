@@ -27,4 +27,5 @@ export class DossiermedicalComponent implements OnInit {
       () => { this.findAll(); this.dossiermedical= new Dossiermedical(); }
     )
   }
+
 }
