@@ -17,6 +17,8 @@ import { HopitalComponent } from './pages/hopital/hopital/hopital.component';
 import { ConsultationComponent } from './pages/consultation/consultation.component';
 import { RoleComponent } from './pages/role/role.component';
 import { FactureComponent } from './pages/facture/facture.component';
+import { HopitalComponent } from './pages/hopital/hopital.component';
+import { ChambreComponent } from './pages/chambre/chambre.component';
 
 
 
@@ -41,6 +43,8 @@ import { FactureComponent } from './pages/facture/facture.component';
     ConsultationComponent,
     RoleComponent,
     FactureComponent,
+    HopitalComponent,
+    ChambreComponent,
 
 
   ],
