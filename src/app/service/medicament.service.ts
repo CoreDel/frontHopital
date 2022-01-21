@@ -18,7 +18,7 @@ export class MedicamentService {
     return this.httpClient.delete(this.baseURL+"/"+id);
   }
 
-  public save(role:any): Observable<any> {
-    return this.httpClient.post(this.baseURL, role);
+  public save(medicament:any): Observable<any> {
+    return this.httpClient.post(this.baseURL, medicament);
   }
 }

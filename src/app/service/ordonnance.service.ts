@@ -19,7 +19,7 @@ export class OrdonnanceService {
     return this.httpClient.delete(this.baseURL+"/"+id);
   }
 
-  public save(role:any): Observable<any> {
-    return this.httpClient.post(this.baseURL, role);
+  public save(ordonnance:any): Observable<any> {
+    return this.httpClient.post(this.baseURL, ordonnance);
   }
 }
