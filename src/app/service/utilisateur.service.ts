@@ -15,8 +15,27 @@ export class UtilisateurService {
     return this.httpClient.get(this.baseURL);
   }
 
-  public findOne(): Observable<any>{
-    return this.httpClient.get(this.baseURL+"/");
+  public findOne(id:number): Observable<any>{
+    return this.httpClient.get(this.baseURL+"/"+ id);
   }
 
+  public findByNom(nom:string): Observable<any>{
+    return this.httpClient.get(this.baseURL+"/"+ nom);
+  }
+
+  public findByUsername(username:string): Observable<any>{
+    return this.httpClient.get(this.baseURL+"/"+ username);
+  }
+
+  public deleteUser(id:number): Observable<any>{
+    return this.httpClient.delete(this.baseURL+"/"+ id);
+  }
+
+  public saveUser(utilisateur: Utilisateur): Observable<any>{
+    return this.httpClient.post(this.baseURL, utilisateur);
+  }
+  
+  public updateUser(utilisateur: Utilisateur, id: number): Observable<any>{
+    return this.httpClient.put(this.baseURL+"/"+id, utilisateur);
+  }
 }
