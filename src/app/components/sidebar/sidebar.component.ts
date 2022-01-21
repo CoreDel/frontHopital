@@ -22,7 +22,9 @@ export const ROUTES: RouteInfo[] = [
     { path: '/facture', title: 'Factures',  icon:'ni-bullet-list-67 text-red', class: '' },
     { path: '/role', title: 'Roles',  icon:'ni-key-25 text-info', class: '' },
     { path: '/dossiermedical', title: 'Dossier medical',  icon:'ni-circle-08 text-pink', class: '' },
-    { path: '/medicament', title: 'Médicatments',  icon:'ni-circle-08 text-pink', class: '' }
+
+    { path: '/medicament', title: 'Médicaments',  icon:'ni-circle-08 text-pink', class: '' },
+    { path: '/utilisateur', title: 'Utilisateurs',  icon:'ni-circle-08 text-pink', class: '' }
 ];
 
 @Component({

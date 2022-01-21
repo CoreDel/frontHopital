@@ -8,7 +8,6 @@ import { TablesComponent } from '../../pages/tables/tables.component';
 import { ChambreComponent } from 'src/app/pages/chambre/chambre.component';
 import { HopitalComponent } from 'src/app/pages/hopital/hopital.component';
 import { ConsultationComponent } from 'src/app/pages/consultation/consultation.component';
-import { Dossiermedical } from 'src/app/model/dossiermedical';
 import { MedicamentComponent } from 'src/app/pages/medicament/medicament.component';
 import { OrdonnanceComponent } from 'src/app/pages/ordonnance/ordonnance.component';
 import { RoleComponent } from 'src/app/pages/role/role.component';
