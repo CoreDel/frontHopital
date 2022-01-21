@@ -19,5 +19,14 @@ export class HopitalComponent implements OnInit {
   findAll(){
     this.hopitalService.findAll().subscribe(data => {this.hopital =data})
   }
+  deleteHopital(id: number) {
+    this.hopitalService.delete(id).subscribe(() => { this.findAll()})
+  }
+  saveHopital() {
+    this.hopitalService.save(this.hopital).subscribe(() => {
+      this.findAll(); // Mettre à jour la table
+      this.hopital = new Hopital(); // pour vider le formulaire
+    })
+  }
 
 }

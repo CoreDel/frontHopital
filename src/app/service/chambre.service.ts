@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Chambre } from '../model/chambre';
 
 @Injectable({
   providedIn: 'root'
@@ -21,5 +22,8 @@ export class ChambreService {
 
   public save(chambre:any): Observable<any> {
     return this.httpClient.post(this.baseURL, chambre);
+  }
+  public updateHopital(idC:number, chambre:any): Observable<any>{
+    return this.httpClient.put(this.baseURL+"/"+idC, Chambre);
   }
 }
