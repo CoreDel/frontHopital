@@ -29,7 +29,8 @@ import { FactureComponent } from './pages/facture/facture.component';
     ComponentsModule,
     NgbModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   declarations: [
     AppComponent,
