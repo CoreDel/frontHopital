@@ -28,5 +28,5 @@ export class HopitalComponent implements OnInit {
       this.hopital = new Hopital(); // pour vider le formulaire
     })
   }
-  
+
 }
