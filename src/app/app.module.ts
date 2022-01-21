@@ -12,12 +12,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
-<<<<<<< HEAD
 import { ConsultationComponent } from './pages/consultation/consultation.component';
-=======
 import { RoleComponent } from './pages/role/role.component';
 import { FactureComponent } from './pages/facture/facture.component';
->>>>>>> cda258609f711f01c5b0355427a9d0a54d5e3bf3
 
 
 
@@ -36,12 +33,9 @@ import { FactureComponent } from './pages/facture/facture.component';
     AppComponent,
     AdminLayoutComponent,
     AuthLayoutComponent,
-<<<<<<< HEAD
     ConsultationComponent,
-=======
     RoleComponent,
     FactureComponent,
->>>>>>> cda258609f711f01c5b0355427a9d0a54d5e3bf3
 
   ],
   providers: [],
