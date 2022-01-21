@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Hopital } from '../model/hopital';
 
 @Injectable({
   providedIn: 'root'
@@ -21,5 +22,8 @@ export class HopitalService {
 
   public save(hopital:any): Observable<any> {
     return this.httpClient.post(this.baseURL, hopital);
+  }
+  public updateHopital(idH:number, hopital:any): Observable<any>{
+    return this.httpClient.put(this.baseURL+"/"+idH, Hopital);
   }
 }
