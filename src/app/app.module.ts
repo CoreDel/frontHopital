@@ -14,6 +14,14 @@ import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
 
 
+import { ConsultationComponent } from './pages/consultation/consultation.component';
+import { RoleComponent } from './pages/role/role.component';
+import { FactureComponent } from './pages/facture/facture.component';
+import { HopitalComponent } from './pages/hopital/hopital.component';
+import { ChambreComponent } from './pages/chambre/chambre.component';
+
+
+
 
 @NgModule({
   imports: [
@@ -23,12 +31,21 @@ import { ComponentsModule } from './components/components.module';
     ComponentsModule,
     NgbModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   declarations: [
     AppComponent,
     AdminLayoutComponent,
     AuthLayoutComponent,
+
+
+    ConsultationComponent,
+    RoleComponent,
+    FactureComponent,
+    HopitalComponent,
+    ChambreComponent,
+
 
   ],
   providers: [],
