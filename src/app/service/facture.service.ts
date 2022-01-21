@@ -12,7 +12,7 @@ export class FactureService {
   constructor(private httpClient:HttpClient) { }
 
   //findAll
-  public findALl() : Observable<any>{
+  public findAll() : Observable<any>{
     return this.httpClient.get(this.baseURL);
   }
 
