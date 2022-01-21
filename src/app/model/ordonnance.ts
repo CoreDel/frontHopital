@@ -1,4 +1,5 @@
-import { ConstructorDeclaration } from "typescript";
+
+import { Consultation } from "./consultation";
 import { Facture } from "./facture";
 import { Medicament } from "./medicament";
 
