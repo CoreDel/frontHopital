@@ -23,7 +23,7 @@ export class ChambreService {
   public save(chambre:any): Observable<any> {
     return this.httpClient.post(this.baseURL, chambre);
   }
-  public updateHopital(idC:number, chambre:any): Observable<any>{
+  public updateChambre(idC:number, chambre:any): Observable<any>{
     return this.httpClient.put(this.baseURL+"/"+idC, Chambre);
   }
 }
