@@ -22,6 +22,7 @@ import { ChambreComponent } from './pages/chambre/chambre.component';
 import { MedicamentComponent } from './pages/medicament/medicament.component';
 import { UtilisateurComponent } from './pages/utilisateur/utilisateur.component';
 import { DossiermedicalComponent } from './pages/dossiermedical/dossiermedical.component';
+import { OrdonnanceComponent } from './pages/ordonnance/ordonnance.component';
 
 
 
@@ -51,6 +52,7 @@ import { DossiermedicalComponent } from './pages/dossiermedical/dossiermedical.c
     MedicamentComponent,
     UtilisateurComponent,
     DossiermedicalComponent,
+    OrdonnanceComponent,
 
 
   ],

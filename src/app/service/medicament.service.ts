@@ -18,6 +18,10 @@ export class MedicamentService {
     return this.httpClient.get(this.baseURL+"/"+ id);
   }
 
+  public findByNomMedicament(nomMedicament:String):Observable<any> {
+    return this.httpClient.get(this.baseURL+'/'+nomMedicament);
+  }
+
   public update(id:number, medicament:any): Observable<any>{
     return this.httpClient.put(this.baseURL+"/"+id, medicament);
   }

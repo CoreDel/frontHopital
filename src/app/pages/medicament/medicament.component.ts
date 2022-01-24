@@ -9,17 +9,29 @@ import { MedicamentService } from 'src/app/service/medicament.service';
 })
 export class MedicamentComponent implements OnInit {
 
+  nomMedicament:string;
   medicaments: any;
+  medicamentExtra:Medicament[];
   medicament: Medicament = new Medicament();
 
   constructor(private medicamentService:MedicamentService) { }
 
   ngOnInit(): void {
-    this.findAll();
+    //this.findAll();
+    this.nomMedicament='';
+    this.findByNomMedicament();
+  }
+
+  onSubmit() {
+    this.findByNomMedicament();
   }
 
   findAll() {
     this.medicamentService.findAll().subscribe(data => {this.medicaments = data});
+  }
+
+  findByNomMedicament() {
+    this.medicamentService.findByNomMedicament(this.nomMedicament).subscribe(data => {this.medicamentExtra = data});
   }
 
   deleteMedicament(id:number) {

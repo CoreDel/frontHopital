@@ -1,38 +1,41 @@
-<div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="min-height: 100px; background-size: cover; background-position: center top;">
+<div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="background-size: cover; background-position: center top;">
     <span class="mask bg-gradient-danger opacity-8"></span>
 </div>
 <br>
-<form>
+<h3 style="text-align: center;">Ajouter une ordonnance</h3>
+<br>
+<form (ngSubmit)="saveOrdonnance()">
     <div class="pl-lg-4">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-3">
           <div class="form-group">
             <label class="form-control-label">Les soins prescrits</label>
-            <input type="text" class="form-control form-control-alternative" placeholder="Soins prescrits">
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="form-group">
-            <label class="form-control-label">Facture</label>
-            <input type="text" class="form-control form-control-alternative" placeholder="Facture">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="form-group">
-            <label class="form-control-label">Consultation</label>
-            <input type="number" class="form-control form-control-alternative" placeholder="Consultation">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="form-group">
-            <label class="form-control-label">Médicaments</label>
-            <input type="text" class="form-control form-control-alternative" placeholder="Médicaments">
+            <input type="text" class="form-control form-control-alternative" [(ngModel)]="ordonnance.soinPrescrit" placeholder="Soins prescrits">
           </div>
         </div>
       </div>
     </div>
 </form>
+<h3 style="text-align: center;">Télécharger mon ordonnance au format PDF</h3>
+<br>
+<div id="pdfTable" #pdfTable style="display: none;">
+  <h3 style="text-align: center;">Mon ordonnance</h3>
+  <br>
+  <br>
+  <p>Date de la consultation : </p>
+  <br>
+  <br>
+  <p>Les soins prescrits lors de la consultation : </p>
+  <br>
+  <br>
+  <p>Les médicaments prescrits lors de la consultation : </p>
+  <br>
+  <br>
+  <p>La facture : </p>
+  <br>
+  <br>
+</div>
+<div class="d-grid gap-2 col-1 mx-auto"> 
+  <button class="btn btn-primary" (click)="downloadAsPDF()">Exporter en PDF</button>
+</div>
+
