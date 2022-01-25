@@ -49,13 +49,13 @@
   <tbody *ngFor="let o of ordonnances">
     <tr>
       <th scope="row">
-        12/05/21
+        12/02/15
       </th>
       <th scope="row">
         <button class="btn btn-info" (click)="findMedByIdOrd(o.idOrdonnance)">Médicaments</button>
       </th>
       <td>
-        30€
+        <button class="btn btn-info" (click)="findFactureByIdOrd(o.idOrdonnance)">Facture</button>&emsp;&emsp;{{prix}}€
       </td>
       <td>
         <button class="btn btn-primary" (click)="downloadAsPDF()">Exporter en PDF</button>

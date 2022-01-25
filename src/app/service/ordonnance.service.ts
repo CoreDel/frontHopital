@@ -34,8 +34,14 @@ export class OrdonnanceService {
   }
 
   public findMedicByIdOrd(id:number): Observable<any> {
-    console.log("bonjour1");
     return this.httpClient.get(this.baseURL+"/medicaments/"+id);
-    console.log("bonjour2");
+  }
+
+  public findFactureByIdOrd(id:number): Observable<any> {
+    return this.httpClient.get(this.baseURL+"/factures/"+id);
+  }
+
+  public findConsultByIdOrd(id:number): Observable<any> {
+    return this.httpClient.get(this.baseURL+"/consultations/"+id);
   }
 }
