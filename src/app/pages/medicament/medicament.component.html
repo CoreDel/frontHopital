@@ -1,5 +1,5 @@
 <div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="background-size: cover; background-position: center top;">
-    <span class="mask bg-gradient-danger opacity-8"></span>
+    <span class="mask bg-gradient-success opacity-8"></span>
 </div>
 <br>
 <h3 style="text-align: center;">Ajouter un médicament</h3>
@@ -10,19 +10,19 @@
         <div class="col-lg-4">
           <div class="form-group">
             <label class="form-control-label">Nom du médicament</label>
-            <input type="text" class="form-control form-control-alternative" [(ngModel)]="medicament.nomMedicament" placeholder="Nom">
+            <input type="text" class="form-control form-control-alternative" name="nomM" [(ngModel)]="medicament.nomMedicament" placeholder="Nom">
           </div>
         </div>
         <div class="col-lg-4">
           <div class="form-group">
             <label class="form-control-label">Description du médicament</label>
-            <input type="text" class="form-control form-control-alternative" [(ngModel)]="medicament.descMedicament" placeholder="Description">
+            <input type="text" class="form-control form-control-alternative" name="descM" [(ngModel)]="medicament.descMedicament" placeholder="Description">
           </div>
         </div>
         <div class="col-lg-4">
           <div class="form-group">
             <label class="form-control-label">Combien voulez-vous en stocker</label>
-            <input type="number" class="form-control form-control-alternative" [(ngModel)]="medicament.quantMedicament" placeholder="Combien en avez-vous en stock ?">
+            <input type="number" class="form-control form-control-alternative" name="quantM" [(ngModel)]="medicament.quantMedicament" placeholder="Combien en avez-vous en stock ?">
           </div>
         </div>
         <div class="d-grid gap-2 col-1 mx-auto">
@@ -36,14 +36,14 @@
 <br>
   <div class="row">
     <div class="col-lg-12">
-      <div style="width: 300px;">
+      <div class="d-grid gap-2 col-6 mx-auto">
         <form (ngSubmit)="onSubmit()">
           <div>
-            <label>Nom du médicament</label>
-            <input type="text" class="form-control" id="nom" name="nom" placeholder="Nom du médicament" required [(ngModel)]="nomMedicament">
+            <label>Rechercher par nom</label>
+            <input type="text" class="form-control form-control-alternative" name="nomMed" placeholder="Nom du médicament" required [(ngModel)]="nomMedicament">
           </div>
           <br>
-          <div>
+          <div class="d-grid gap-2 col-2 mx-auto">
             <button type="submit" class="btn btn-primary">Rechercher</button>
           </div>
         </form>

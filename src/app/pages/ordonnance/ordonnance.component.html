@@ -1,5 +1,5 @@
 <div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="background-size: cover; background-position: center top;">
-    <span class="mask bg-gradient-danger opacity-8"></span>
+    <span class="mask bg-gradient-success opacity-8"></span>
 </div>
 <br>
 <h3 style="text-align: center;">Ajouter une ordonnance</h3>
@@ -10,7 +10,7 @@
         <div class="col-lg-3">
           <div class="form-group">
             <label class="form-control-label">Les soins prescrits</label>
-            <input type="text" class="form-control form-control-alternative" [(ngModel)]="ordonnance.soinPrescrit" placeholder="Soins prescrits">
+            <input type="text" class="form-control form-control-alternative" name="soinP" [(ngModel)]="ordonnance.soinPrescrit" placeholder="Soins prescrits">
           </div>
         </div>
       </div>
@@ -38,4 +38,41 @@
 <div class="d-grid gap-2 col-1 mx-auto"> 
   <button class="btn btn-primary" (click)="downloadAsPDF()">Exporter en PDF</button>
 </div>
+
+<table class="table align-items-center table-flush">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Soin prescrit</th>
+    </tr>
+    <tr>
+      <td scope="col">Afficher les médicaments</td>
+    </tr>
+  </thead>
+  <tbody *ngFor="let o of ordonnances">
+    <tr>
+      <td>
+        {{o.soinPrescrit}}
+      </td>
+      <td>
+        <button class="btn btn-info" (click)="findMedByIdOrd(o.idOrdonnance)">Médicaments</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Les médicaments qu'il vous faut</h3>
+<table class="table align-items-center table-flush">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Nom du médicament</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let m of medicaments">
+    <tr>
+      <td>
+        {{m.nomMedicament}}
+      </td>
+    </tr>
+  </tbody>
+</table>
 

@@ -123,7 +123,7 @@
               <div class="col-lg-6">
                 <div class="form-group">
                   <label class="form-control-label">Validation :  </label>
-                  <button type="button" class="btn btn-success">Valider</button>
+                  <button class="btn btn-success">Valider</button>
                 </div>
               </div>
             </div>
@@ -171,6 +171,24 @@
             </div>
           </div>-->
         </form>
+        <table>
+          <tr>
+              <th>Nom</th>
+              <th>Prenom</th>
+              <th>Username</th>
+              <th>Password</th>
+              <th>Age</th>
+              <th>Action</th>
+          </tr>
+          <tr *ngFor= "let u of utilisateurs">
+              <td>{{u.nomUtilisateur}}</td>
+              <td>{{u.prenomUtilisateur}}</td>
+              <td>{{u.username}}</td>
+              <td>{{u.password}}</td>
+              <td>{{u.age}}</td>
+              <td><button (click)="deleteUtilisateur(u.idUtilisateur)">Delete</button></td>
+          </tr>
+      </table>
       </div>
     </div>
   </div>

@@ -31,11 +31,11 @@ export class UtilisateurService {
     return this.httpClient.delete(this.baseURL+"/"+ id);
   }
 
-  public saveUser(utilisateur: Utilisateur): Observable<any>{
+  public saveUser(utilisateur: any): Observable<any>{
     return this.httpClient.post(this.baseURL, utilisateur);
   }
   
-  public updateUser(utilisateur: Utilisateur, id: number): Observable<any>{
+  public updateUser(utilisateur: any, id: number): Observable<any>{
     return this.httpClient.put(this.baseURL+"/"+id, utilisateur);
   }
 }
