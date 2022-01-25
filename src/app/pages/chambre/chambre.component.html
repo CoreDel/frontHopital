@@ -1,5 +1,103 @@
-<div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="min-height: 100px; background-size: cover; background-position: center top;">
-    <span class="mask bg-gradient-danger opacity-8"></span>
-    <p>chambre works!</p>
+<div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center"
+  style="background-size: cover; background-position: center top;">
+  <span class="mask bg-gradient-success opacity-8"></span>
 </div>
+<br>
+<h3 style="text-align: center;">Ajouter une chambre</h3>
+<br>
+<form (ngSubmit)="saveChambre()">
+  <div class="pl-lg-4">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label class="form-control-label">Numero de chambre</label>
+          <input type="text" class="form-control form-control-alternative" name="numChambre"
+            [(ngModel)]="chambre.numChambre" placeholder="NumeroChambre">
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="form-group">
 
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label class="form-control-label">Hopital</label>
+          <input type="text" class="form-control form-control-alternative">
+        </div>
+      </div>
+
+      <div styleclass="d-grid gap-2 col-1 mx-auto">
+        <button class="btn btn-success">Ajouter</button>
+      </div>
+    </div>
+  </div>
+</form>
+<br>
+<h3 style="text-align: center;">Recherche d'une chambre par numero de chambre</h3>
+<br>
+<div class="row">
+  <div class="col-lg-12">
+    <div style="width: 300px;">
+      <form (ngSubmit)="onSubmit()">
+        <div>
+          <label>Numero de la chambre</label>
+          <input type="text" class="form-control" id="num" name="num" placeholder="NumeroChambre" required
+            [(ngModel)]="numChambre">
+        </div>
+        <br>
+        <div>
+          <button type="submit" class="btn btn-primary">Rechercher</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<br>
+<table class="table align-items-center table-flush">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">NumeroChambre</th>
+      <th scope="col">Disponibilité</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let c of chambreExtra">
+    <tr>
+      <th scope="row">
+        {{c.numChambre}}
+      </th>
+      <td>
+        {{c.dispoChambre}}
+      </td>
+
+      <td>
+        <button class="btn btn-danger" (click)="deleteChambre(c.idChambre)">Supprimer</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h3 style="text-align: center;">Liste des chambre de l'hopital</h3>
+<br>
+<br>
+<table class="table align-items-center table-flush" >
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">NumeroChambre</th>
+      <th scope="col">Disponibilité</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let c of chambres">
+    <tr>
+      <th scope="row">
+        {{c.numChambre}}
+      </th>
+      <td>
+        {{c.dispoChambre}}
+      </td>
+
+      <td>
+        <button class="btn btn-danger" (click)="deleteChambre(c.idChambre)">Supprimer</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
