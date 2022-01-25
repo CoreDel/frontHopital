@@ -26,4 +26,7 @@ export class ChambreService {
   public updateChambre(idC:number, chambre:any): Observable<any>{
     return this.httpClient.put(this.baseURL+"/"+idC, Chambre);
   }
+  public findByNumChambre(numChambre:number):Observable<any> {
+    return this.httpClient.get(this.baseURL+'/'+numChambre);
+  }
 }
