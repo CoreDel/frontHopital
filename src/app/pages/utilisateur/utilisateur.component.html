@@ -171,8 +171,8 @@
             </div>
           </div>-->
         </form>
-        <table>
-          <tr>
+        <table class="table align-items-center table-flush">
+          <tr class="thead-light">
               <th>Nom</th>
               <th>Prenom</th>
               <th>Username</th>
@@ -180,7 +180,7 @@
               <th>Age</th>
               <th>Action</th>
           </tr>
-          <tr *ngFor= "let u of utilisateurs">
+          <tr *ngFor= "let u of utilisateurs" class="thead-light">
               <td>{{u.nomUtilisateur}}</td>
               <td>{{u.prenomUtilisateur}}</td>
               <td>{{u.username}}</td>
