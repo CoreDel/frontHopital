@@ -26,4 +26,9 @@ export class HopitalService {
   public updateHopital(idH:number, hopital:any): Observable<any>{
     return this.httpClient.put(this.baseURL+"/"+idH, Hopital);
   }
+  public nombreDispoChambre(): Observable<any> {
+    
+    return this.httpClient.get("http://localhost:9090/nombreChambresDisponibles");
+    
+  }
 }
