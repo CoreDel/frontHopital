@@ -8,6 +8,7 @@ import pdfMake from 'pdfmake/build/pdfmake';
 import pdfFonts from 'pdfmake/build/vfs_fonts';
 pdfMake.vfs = pdfFonts.pdfMake.vfs;
 import htmlToPdfmake from 'html-to-pdfmake';
+import { Medicament } from 'src/app/model/medicament';
 
 @Component({
   selector: 'app-ordonnance',
@@ -18,7 +19,7 @@ export class OrdonnanceComponent implements OnInit {
 
   ordonnances:any;
   ordonnance: Ordonnance = new Ordonnance();
-  medicaments:any;
+  medicaments:Medicament[];
 
   constructor(private ordonnanceService:OrdonnanceService) { }
 
@@ -36,6 +37,10 @@ export class OrdonnanceComponent implements OnInit {
 
   saveOrdonnance() {
     this.ordonnanceService.save(this.ordonnance).subscribe( () => {this.findAll(); this.ordonnance = new Ordonnance();});
+  }
+
+  findMedByIdOrd(id:number) {
+    this.ordonnanceService.findMedicByIdOrd(id).subscribe( data => {this.medicaments = data});
   }
 
   @ViewChild('pdfTable') pdfTable: ElementRef;

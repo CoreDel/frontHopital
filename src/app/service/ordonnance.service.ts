@@ -15,9 +15,11 @@ export class OrdonnanceService {
     return this.httpClient.get(this.baseURL);
   }
 
+  /*
   public findOne(id:number): Observable<any>{
     return this.httpClient.get(this.baseURL+"/"+ id);
   }
+  */
 
   public update(id:number, ordonnance:any): Observable<any>{
     return this.httpClient.put(this.baseURL+"/"+id, ordonnance);
@@ -29,5 +31,9 @@ export class OrdonnanceService {
 
   public save(ordonnance:any): Observable<any> {
     return this.httpClient.post(this.baseURL, ordonnance);
+  }
+
+  public findMedicByIdOrd(id:number): Observable<any> {
+    return this.httpClient.get(this.baseURL+"/medicaments/"+id);
   }
 }
