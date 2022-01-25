@@ -19,7 +19,7 @@ export class OrdonnanceComponent implements OnInit {
 
   ordonnances:any;
   ordonnance: Ordonnance = new Ordonnance();
-  medicaments:Medicament[];
+  medicaments:any;
 
   constructor(private ordonnanceService:OrdonnanceService) { }
 
@@ -40,7 +40,9 @@ export class OrdonnanceComponent implements OnInit {
   }
 
   findMedByIdOrd(id:number) {
+    console.log("bonjour3");
     this.ordonnanceService.findMedicByIdOrd(id).subscribe( data => {this.medicaments = data});
+    console.log("bonjour4");
   }
 
   @ViewChild('pdfTable') pdfTable: ElementRef;

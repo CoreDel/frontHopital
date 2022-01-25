@@ -51,6 +51,8 @@
     </div>
   </div>
 <br>
+<button class="btn btn-info" (click)="findAll()">Rafraîchir</button>
+<br>
 <table class="table align-items-center table-flush">
   <thead class="thead-light">
     <tr>
@@ -60,7 +62,7 @@
       <th scope="col">Suppression</th>
     </tr>
   </thead>
-  <tbody *ngFor="let m of medicamentExtra">
+  <tbody *ngFor="let m of medicaments">
     <tr>
       <th scope="row">
         {{m.nomMedicament}}
