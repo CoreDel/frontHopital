@@ -17,7 +17,7 @@ export class UtilisateurComponent implements OnInit {
     this.findAll();
   }
   findAll(){
-    this.utilisateurService.findAll().subscribe(data => {this.utilisateur = data});
+    this.utilisateurService.findAll().subscribe(data => {this.utilisateurs = data});
   }
   deleleteUser(id :number){
     this.utilisateurService.deleteUser(id).subscribe(() => {this.findAll()});
