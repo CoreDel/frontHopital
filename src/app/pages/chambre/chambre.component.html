@@ -42,8 +42,7 @@
       <form (ngSubmit)="onSubmit()">
         <div>
           <label>Numero de la chambre</label>
-          <input type="text" class="form-control" id="num" name="num" placeholder="NumeroChambre" required
-            [(ngModel)]="numChambre">
+          <input type="text" class="form-control" id="num" name="num" placeholder="NumeroChambre" required [(ngModel)]="numChambre">
         </div>
         <br>
         <div>
@@ -61,8 +60,8 @@
       <th scope="col">Disponibilité</th>
     </tr>
   </thead>
-  <tbody *ngFor="let c of chambreExtra">
-    <tr>
+  <tbody >
+    <tr *ngFor="let c of chambreExtra">
       <th scope="row">
         {{c.numChambre}}
       </th>
@@ -76,7 +75,7 @@
     </tr>
   </tbody>
 </table>
-<h3 style="text-align: center;">Liste des chambre de l'hopital</h3>
+<h3 style="text-align: center;">Liste des chambres de l'hopital</h3>
 <br>
 <br>
 <table class="table align-items-center table-flush" >
@@ -84,6 +83,7 @@
     <tr>
       <th scope="col">NumeroChambre</th>
       <th scope="col">Disponibilité</th>
+      <th scope="col">Actions</th>
     </tr>
   </thead>
   <tbody *ngFor="let c of chambres">
