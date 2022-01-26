@@ -1,1 +1,43 @@
-<p>dossiermedical works!</p>
+<div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="min-height: 100px; background-size: cover; background-position: center top;"></div>
+    <span class="mask bg-gradient-success opacity-8"></span>
+
+<!-- Header container -->
+<div class="container-fluid d-flex align-items-center">
+  <div class="row">
+    <div class="col-lg-7 col-md-10">
+      <h2 class="display-2 text-white">Votre dossier médical</h2>
+      <p class="text-white mt-0 mb-6">Ne dévoilez pas les données contenues dans votre dossier personnel</p>
+      <!--<a href="#!" class="btn btn-info">Edit profile</a>-->
+      <br>
+      <br>
+    </div>
+  </div>
+</div>
+<div class="container-fluid mt--7">
+  <div class="card bg-secondary shadow">
+    <div class="card-header bg-white border-0">
+      <div class="row align-items-center">
+    <table class="table align-items-center table-flush">
+        <tr class="thead-light">
+            <th>Nom</th>
+            <th>Prenom</th>
+            <th>Age</th>
+            <th>N° de sécurité social</th>
+            <th>Traitements suivis</th>
+            <th>Opérations</th>
+            <th>Antécédents</th>
+        </tr>
+        <tr *ngFor= "let d of dossiersmedicaux" class="thead-light">
+            <td>{{d.nomUtilisateur}}</td>
+            <td>{{d.prenomUtilisateur}}</td>
+            <td>{{d.age}}</td>
+            <td>{{d.numeroSecu}}</td>
+            <td>{{d.traitement}}</td>
+            <td>{{d.operation}}</td>
+            <td>{{d.antecedent}}</td>
+     </tr>
+    </table>
+</div>
+</div>
+</div>
+</div>
