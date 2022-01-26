@@ -1,82 +1,124 @@
-<div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="background-size: cover; background-position: center top;">
-    <span class="mask bg-gradient-success opacity-8"></span>
+<div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center"
+  style="background-size: cover; background-position: center top;">
+  <span class="mask bg-gradient-success opacity-8"></span>
 </div>
 <br>
 <h3 style="text-align: center;">Créer une ordonnance</h3>
 <br>
 <form (ngSubmit)="saveOrdonnance()">
-    <div class="pl-lg-4">
-      <div class="row">
-        <div class="col-lg-3">
-          <div class="form-group">
-            <label class="form-control-label">Les soins prescrits</label>
-            <input type="text" class="form-control form-control-alternative" name="soinP" [(ngModel)]="ordonnance.soinPrescrit" placeholder="Soins prescrits">
-          </div>
+  <div class="pl-lg-4">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="form-group">
+          <label class="form-control-label">Les soins prescrits</label>
+          <input type="text" class="form-control form-control-alternative" name="soinP"
+            [(ngModel)]="ordonnance.soinPrescrit" placeholder="Soins prescrits">
         </div>
       </div>
     </div>
+  </div>
 </form>
-<h3 style="text-align: center;">Mes ordonnances</h3>
-<br>
-<div id="pdfTable" #pdfTable style="display: none;">
-  <h3 style="text-align: center;">Mon ordonnance</h3>
-  <br>
-  <br>
-  <p>Date de la consultation : </p>
-  <br>
-  <br>
-  <p>Les soins prescrits lors de la consultation : </p>
-  <br>
-  <br>
-  <p>Les médicaments prescrits lors de la consultation : </p>
-  <br>
-  <br>
-  <p>La facture : </p>
-  <br>
-  <br>
-</div>
 
 <br>
 <table class="table align-items-center table-flush">
   <thead class="thead-light">
     <tr>
-      <th scope="col">Date</th>
-      <th scope="col">Médicaments</th>
-      <th scope="col">Facture</th>
+      <th scope="col">Numéro</th>
+      <th scope="col">Afficher</th>
       <th scope="col">Exporter en PDF</th>
     </tr>
   </thead>
   <tbody *ngFor="let o of ordonnances">
     <tr>
       <th scope="row">
-        12/02/15
-      </th>
-      <th scope="row">
-        <button class="btn btn-info" (click)="findMedByIdOrd(o.idOrdonnance)">Médicaments</button>
+        {{o.idOrdonnance}}
       </th>
       <td>
-        <button class="btn btn-info" (click)="findFactureByIdOrd(o.idOrdonnance)">Facture</button>&emsp;&emsp;{{prix}}€
+        <button class="btn btn-info" (click)="getAll(o.idOrdonnance)">Afficher</button>
       </td>
       <td>
-        <button class="btn btn-primary" (click)="downloadAsPDF()">Exporter en PDF</button>
+        <button class="btn btn-primary" (click)="downloadAsPDF(o.idOrdonnance)">Exporter en PDF</button>
       </td>
     </tr>
   </tbody>
 </table>
 <br>
-<h3 style="text-align: center;">Les médicaments qu'il vous faut</h3>
-<table class="table align-items-center table-flush">
-  <thead class="thead-light">
-    <tr>
-      <th scope="col">Nom du médicament</th>
-    </tr>
-  </thead>
-  <tbody *ngFor="let m of medicaments">
-    <tr>
-      <td>
-        {{m.nomMedicament}}
-      </td>
-    </tr>
-  </tbody>
-</table>
 
+<div>
+  <h3 style="text-align: center;">Mon ordonnance</h3>
+
+  <table class="table align-items-center table-flush">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">Date</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let c of consultations">
+      <tr>
+        <td>
+          {{ c.date | date: 'dd/MM/yyyy'}}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="table align-items-center table-flush">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">Nom des médicaments</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let m of medicaments">
+      <tr>
+        <td>
+          {{m.nomMedicament}}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+
+  <table class="table align-items-center table-flush">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">Facture</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let f of factures">
+      <tr>
+        <td>
+          {{f.prix}}€
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+</div>
+
+<br>
+<div id="pdfTable" #pdfTable style="display: none;">
+  <h3 style="text-align: center;">Mon ordonnance</h3>
+  <br>
+  <br>
+  <h5>Date : </h5>
+  <br>
+  <ul style="list-style-type:none" *ngFor="let c of consultations">
+    <li>{{ c.date | date: 'dd/MM/yyyy'}}</li>
+  </ul>
+  <br>
+  <br>
+  <h5>Médicaments Prescrits : </h5>
+  <br>
+  <ul style="list-style-type:none" *ngFor="let m of medicaments">
+    <li>{{m.nomMedicament}}</li>
+  </ul>
+  <br>
+  <br>
+  <h5>Prix : </h5>
+  <br>
+  <ul style="list-style-type:none" *ngFor="let f of factures">
+    <li>{{f.prix}}€</li>
+  </ul>
+  <br>
+  <br>
+</div>
