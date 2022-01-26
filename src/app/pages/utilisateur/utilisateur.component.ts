@@ -8,10 +8,11 @@ import { UtilisateurService } from 'src/app/service/utilisateur.service';
   styleUrls: ['./utilisateur.component.scss']
 })
 export class UtilisateurComponent implements OnInit {
-  utilisateurs: any;
+  utilisateurs: any
   utilisateur: Utilisateur = new Utilisateur();
 
-  constructor(private utilisateurService: UtilisateurService) { }
+  constructor(private utilisateurService: UtilisateurService) {
+   }
 
   ngOnInit(): void {
     this.findAll();

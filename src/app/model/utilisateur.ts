@@ -1,3 +1,4 @@
+
 export class Utilisateur {
     idUtilisateur!:number;
     nomUtilisateur!:string;
@@ -5,5 +6,4 @@ export class Utilisateur {
     username!:string;
     password!:string;
     age!:number;
-
 }
