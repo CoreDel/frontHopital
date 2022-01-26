@@ -17,16 +17,8 @@
       </div>
       <div class="col-lg-4">
         <div class="form-group">
-
         </div>
       </div>
-      <div class="col-lg-4">
-        <div class="form-group">
-          <label class="form-control-label">Hopital</label>
-          <input type="text" class="form-control form-control-alternative">
-        </div>
-      </div>
-
       <div styleclass="d-grid gap-2 col-1 mx-auto">
         <button class="btn btn-success">Ajouter</button>
       </div>
@@ -34,56 +26,48 @@
   </div>
 </form>
 <br>
-<h3 style="text-align: center;">Recherche d'une chambre par numero de chambre</h3>
+<h3 style="text-align: center;">Liste des chambres dans l'hopital</h3>
 <br>
-<div class="row">
-  <div class="col-lg-12">
-    <div style="width: 300px;">
-      <form (ngSubmit)="onSubmit()">
-        <div>
-          <label>Numero de la chambre</label>
-          <input type="text" class="form-control" id="num" name="num" placeholder="NumeroChambre" required [(ngModel)]="numChambre">
-        </div>
-        <br>
-        <div>
-          <button type="submit" class="btn btn-primary">Rechercher</button>
-        </div>
-      </form>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <form (ngSubmit)="onSubmit()">
+          <div>
+            <label>Rechercher par numero de chambre</label>
+            <input type="text" class="form-control form-control-alternative" name="numChambre" placeholder="Numero de la chambre" required [(ngModel)]="numChambre">
+          </div>
+          <br>
+          <div class="d-grid gap-2 col-2 mx-auto">
+            <button type="submit" class="btn btn-primary">Rechercher</button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
-</div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <form (ngSubmit)="onSubmitDispo()">
+          <div>
+            <label>Rechercher par disponibilité</label>
+          </div>
+          <br>
+          <div class="d-grid gap-2 col-2 mx-auto">
+            <button type="submit" class="btn btn-primary">Rechercher</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+<br>
+<button class="btn btn-info" (click)="findAll()">Rafraîchir</button>
 <br>
 <table class="table align-items-center table-flush">
   <thead class="thead-light">
     <tr>
-      <th scope="col">NumeroChambre</th>
+      <th scope="col">Numero de la chambre</th>
       <th scope="col">Disponibilité</th>
-    </tr>
-  </thead>
-  <tbody >
-    <tr *ngFor="let c of chambreExtra">
-      <th scope="row">
-        {{c.numChambre}}
-      </th>
-      <td>
-        {{c.dispoChambre}}
-      </td>
-
-      <td>
-        <button class="btn btn-danger" (click)="deleteChambre(c.idChambre)">Supprimer</button>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<h3 style="text-align: center;">Liste des chambres de l'hopital</h3>
-<br>
-<br>
-<table class="table align-items-center table-flush" >
-  <thead class="thead-light">
-    <tr>
-      <th scope="col">NumeroChambre</th>
-      <th scope="col">Disponibilité</th>
-      <th scope="col">Actions</th>
+      <th scope="col">Action</th>
     </tr>
   </thead>
   <tbody *ngFor="let c of chambres">
@@ -94,9 +78,8 @@
       <td>
         {{c.dispoChambre}}
       </td>
-
       <td>
-        <button class="btn btn-danger" (click)="deleteChambre(c.idChambre)">Supprimer</button>
+        <button class="btn btn-danger" (click)="deleteMedicament(c.idChambre)">Supprimer</button>
       </td>
     </tr>
   </tbody>

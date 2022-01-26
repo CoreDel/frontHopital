@@ -29,4 +29,7 @@ export class ChambreService {
   public findByNumChambre(numChambre:number):Observable<any> {
     return this.httpClient.get(this.baseURL+'/'+numChambre);
   }
+  public findByDispoChambre(disponibilite:boolean):Observable<any>{
+    return this.httpClient.get('http://localhost:9090/chambresDisponibles');
+  }
 }
