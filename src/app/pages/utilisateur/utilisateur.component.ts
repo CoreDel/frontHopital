@@ -19,7 +19,7 @@ export class UtilisateurComponent implements OnInit {
   findAll(){
     this.utilisateurService.findAll().subscribe(data => {this.utilisateurs = data});
   }
-  deleleteUser(id :number){
+  deleteUtilisateur(id :number){
     this.utilisateurService.deleteUser(id).subscribe(() => {this.findAll()});
   }
   saveUtilisateur(){

@@ -10,11 +10,13 @@ import { HopitalService } from 'src/app/service/hopital.service';
 export class HopitalComponent implements OnInit {
   hopitals: any;
   hopital: Hopital = new Hopital;
+  nbChambre: number;
 
   constructor(private hopitalService: HopitalService) { }
 
   ngOnInit(): void {
     this.findAll()
+    this.nombreDispoChambre();
   }
   findAll(){
     this.hopitalService.findAll().subscribe(data => {this.hopital =data})
@@ -28,5 +30,9 @@ export class HopitalComponent implements OnInit {
       this.hopital = new Hopital(); // pour vider le formulaire
     })
   }
-
+  nombreDispoChambre() {
+   
+    this.hopitalService.nombreDispoChambre().subscribe( data => {this.nbChambre= data});
+   
+  }
 }

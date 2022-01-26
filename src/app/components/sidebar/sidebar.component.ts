@@ -15,16 +15,16 @@ export const ROUTES: RouteInfo[] = [
     { path: '/tables', title: 'Tables',  icon:'ni-bullet-list-67 text-red', class: '' },
     { path: '/login', title: 'Login',  icon:'ni-key-25 text-info', class: '' },
     { path: '/register', title: 'Register',  icon:'ni-circle-08 text-pink', class: '' },
-    { path: '/hopital', title: 'Hopital',  icon: 'ni-tv-2 text-primary', class: '' },
-    { path: '/chambre', title: 'Chambres',  icon:'ni-planet text-blue', class: '' },
-    { path: '/consultation', title: 'Consultations',  icon:'ni-pin-3 text-orange', class: '' },
-    { path: '/ordonnance', title: 'Ordonnance',  icon:'ni-single-02 text-yellow', class: '' },
-    { path: '/facture', title: 'Factures',  icon:'ni-bullet-list-67 text-red', class: '' },
-    { path: '/role', title: 'Roles',  icon:'ni-key-25 text-info', class: '' },
-    { path: '/dossiermedical', title: 'Dossier medical',  icon:'ni-circle-08 text-pink', class: '' },
+    { path: '/hopital', title: 'Hopital',  icon: 'ni-building text-success', class: '' },
+    { path: '/chambre', title: 'Chambres',  icon:'ni-air-baloon text-success', class: '' },
+    { path: '/consultation', title: 'Consultations',  icon:'ni-bulb-61 text-success', class: '' },
+    { path: '/ordonnance', title: 'Ordonnance',  icon:'ni-folder-17 text-success', class: '' },
+    { path: '/facture', title: 'Factures',  icon:'ni-credit-card text-success', class: '' },
+    { path: '/role', title: 'Roles',  icon:'ni-key-25 text-success', class: '' },
+    { path: '/dossiermedical', title: 'Dossier medical',  icon:'ni-collection text-success', class: '' },
 
-    { path: '/medicament', title: 'Médicaments',  icon:'ni-circle-08 text-pink', class: '' },
-    { path: '/utilisateur', title: 'Utilisateurs',  icon:'ni-circle-08 text-pink', class: '' }
+    { path: '/medicament', title: 'Médicaments',  icon:'ni-shop text-success', class: '' },
+    { path: '/utilisateur', title: 'Utilisateurs',  icon:'ni-circle-08 text-success', class: '' }
 ];
 
 @Component({
