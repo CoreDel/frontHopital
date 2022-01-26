@@ -18,8 +18,8 @@ export class ChambreComponent implements OnInit {
   constructor(private chambreService: ChambreService) { }
 
   ngOnInit(): void {
-    this.numChambre='';
-    this.findByNumChambre();
+    /*this.numChambre='';
+    this.findByNumChambre();*/
     this.findAll();
   }
 
@@ -42,6 +42,6 @@ export class ChambreComponent implements OnInit {
   findByNumChambre() {
     var num:number=+this.numChambre;
     console.log("le numero="+ num);
-    this.chambreService.findByNumChambre(num).subscribe(data => {this.chambreExtra = data;console.log("je suis la liste"+this.chambreExtra)});
+    this.chambreService.findByNumChambre(num).subscribe(data => {this.chambres = data;console.log("je suis la liste"+this.chambres)});
   }
 }
