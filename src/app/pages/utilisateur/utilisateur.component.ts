@@ -17,12 +17,13 @@ export class UtilisateurComponent implements OnInit {
     this.findAll();
   }
   findAll(){
-    this.utilisateurService.findAll().subscribe(data => {this.utilisateur = data});
+    this.utilisateurService.findAll().subscribe(data => {this.utilisateurs = data});
   }
-  deleleteUser(id :number){
+  deleteUtilisateur(id :number){
     this.utilisateurService.deleteUser(id).subscribe(() => {this.findAll()});
   }
   saveUtilisateur(){
-    this.utilisateurService.saveUser(this.utilisateur).subscribe(() => {this.findAll(); this.utilisateur = new Utilisateur();});
+    this.utilisateurService.saveUser(this.utilisateur).subscribe(() => {this.findAll(); 
+    this.utilisateur = new Utilisateur()});
   }
 }

@@ -9,7 +9,8 @@ import { MedicamentService } from 'src/app/service/medicament.service';
 })
 export class MedicamentComponent implements OnInit {
 
-  medicaments: any;
+  nomMedicament:string;
+  medicaments: Medicament[];
   medicament: Medicament = new Medicament();
 
   constructor(private medicamentService:MedicamentService) { }
@@ -18,8 +19,16 @@ export class MedicamentComponent implements OnInit {
     this.findAll();
   }
 
+  onSubmit() {
+    this.findByNomMedicament();
+  }
+
   findAll() {
     this.medicamentService.findAll().subscribe(data => {this.medicaments = data});
+  }
+
+  findByNomMedicament() {
+    this.medicamentService.findByNomMedicament(this.nomMedicament).subscribe(data => {this.medicaments = data});
   }
 
   deleteMedicament(id:number) {
