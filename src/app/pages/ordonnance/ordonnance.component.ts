@@ -9,6 +9,8 @@ import pdfMake from 'pdfmake/build/pdfmake';
 import pdfFonts from 'pdfmake/build/vfs_fonts';
 pdfMake.vfs = pdfFonts.pdfMake.vfs;
 import htmlToPdfmake from 'html-to-pdfmake';
+import { Consultation } from 'src/app/model/consultation';
+import { MedicamentService } from 'src/app/service/medicament.service';
 
 @Component({
   selector: 'app-ordonnance',
@@ -20,11 +22,11 @@ export class OrdonnanceComponent implements OnInit {
   ordonnances:any;
   ordonnance: Ordonnance = new Ordonnance();
   medicaments:any;
-  facture:Facture;
+  factures:any;
   consultations:any;
-  prix:number;
+  allMedic:any;
 
-  constructor(private ordonnanceService:OrdonnanceService) { }
+  constructor(private ordonnanceService:OrdonnanceService, private medicamentService:MedicamentService) { }
 
   ngOnInit(): void {
     this.findAll();
@@ -47,16 +49,24 @@ export class OrdonnanceComponent implements OnInit {
   }
 
   findFactureByIdOrd(id:number) {
-    this.ordonnanceService.findFactureByIdOrd(id).subscribe( data =>{this.facture = data});
-    this.prix = this.facture.prix;
+    this.ordonnanceService.findFactureByIdOrd(id).subscribe( data => {this.factures = data});
   }
 
   findConsultByIdOrd(id:number) {
-    this.ordonnanceService.findConsultByIdOrd(id).subscribe( data =>{this.consultations = data});
+    this.ordonnanceService.findConsultByIdOrd(id).subscribe( data => {this.consultations = data});
+  }
+
+  getAll(id:number) {
+    this.findConsultByIdOrd(id);
+
+    this.findMedByIdOrd(id);
+
+    this.findFactureByIdOrd(id);
   }
 
   @ViewChild('pdfTable') pdfTable: ElementRef;
   downloadAsPDF() {
+
     const doc = new jsPDF();
    
     const pdfTable = this.pdfTable.nativeElement;
@@ -66,5 +76,9 @@ export class OrdonnanceComponent implements OnInit {
     const documentDefinition = { content: html };
     pdfMake.createPdf(documentDefinition).open(); 
      
+  }
+
+  findAllMedic() {
+    this.medicamentService.findAll().subscribe(data => {this.allMedic = data});
   }
 }
