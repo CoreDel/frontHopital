@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Utilisateur } from 'src/app/model/utilisateur';
 import { UtilisateurService } from 'src/app/service/utilisateur.service';
 
@@ -11,7 +12,7 @@ export class UtilisateurComponent implements OnInit {
   utilisateurs: any
   utilisateur: Utilisateur = new Utilisateur();
 
-  constructor(private utilisateurService: UtilisateurService) {
+  constructor(private utilisateurService: UtilisateurService, private router:Router) {
    }
 
   ngOnInit(): void {
