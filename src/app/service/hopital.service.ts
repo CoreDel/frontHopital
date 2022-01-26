@@ -31,4 +31,16 @@ export class HopitalService {
     return this.httpClient.get("http://localhost:9090/nombreChambresDisponibles");
     
   }
+  public nombreMedecin(): Observable<any> {
+    return this.httpClient.get("http://localhost:9090/nombreutilisateurs/{medecin}");
+  }
+  public nombrePatient(): Observable<any> {
+    return this.httpClient.get("http://localhost:9090/nombreutilisateurs/{patient}");
+  }
+  public listMedecin(): Observable<any> {
+    return this.httpClient.get("http://localhost:9090/user/{medecin}");
+  }
+  public listMedicament(): Observable<any> {
+    return this.httpClient.get("http://localhost:9090/medicaments")
+  }
 }
