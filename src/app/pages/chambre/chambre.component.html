@@ -67,6 +67,7 @@
     <tr>
       <th scope="col">Numero de la chambre</th>
       <th scope="col">Disponibilité</th>
+      <th scope="col">Modifier la disponibilité</th>
       <th scope="col">Action</th>
     </tr>
   </thead>
@@ -78,6 +79,14 @@
       <td>
         {{c.dispoChambre}}
       </td>
+      <div class="col-lg-6">
+        <div class="input-group mb-3">
+          <input type="number" class="form-control form-control-alternative" name="dC" [(ngModel)]="chambre.dispoChambre">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" id="button-addon2" (click)="updateChambre(c.idChambre)">Modifier</button>
+          </div>
+        </div>
+      </div>
       <td>
         <button class="btn btn-danger" (click)="deleteMedicament(c.idChambre)">Supprimer</button>
       </td>
