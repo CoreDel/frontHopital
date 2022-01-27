@@ -1,0 +1,890 @@
+[33mcommit adb183bdbccfbb3daa04eac2954e504fe08ae5e6[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/localGuillaume[m[33m, [m[1;32mlocalGuillaume[m[33m)[m
+Author: VeroGui <veroguillaume@hotmail.fr>
+Date:   Thu Jan 27 10:15:01 2022 +0100
+
+    suppress
+
+[33mcommit 1a9938a548f8353b6fb2132836e3091b501db685[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: a935ccd 8726372
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Wed Jan 26 11:02:44 2022 -0500
+
+    Merge pull request #42 from CoreDel/localGuillaume
+    
+    presque finie
+
+[33mcommit 8726372ac09ad8d7b8d211f42ccba1fbf0ee3045[m
+Author: VeroGui <veroguillaume@hotmail.fr>
+Date:   Wed Jan 26 17:00:57 2022 +0100
+
+    presque finie
+
+[33mcommit a935ccd625a197cddfe9b639d9d3252c6d54ac76[m
+Merge: 35553bc 3926cc5
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Wed Jan 26 11:00:06 2022 -0500
+
+    Merge pull request #41 from CoreDel/localNico
+    
+    Local nico
+
+[33mcommit 3926cc59b437f3a15a5c856fa0dd275b740395eb[m[33m ([m[1;31morigin/localNico[m[33m)[m
+Merge: 412848c 35553bc
+Author: NicolasBobba <97732668+NicolasBobba@users.noreply.github.com>
+Date:   Wed Jan 26 16:59:40 2022 +0100
+
+    Merge branch 'master' into localNico
+
+[33mcommit 412848c419e0f71b2114e1d0054bcf87188e1c19[m
+Author: NicolasBobba <nicolasbobba@orange.fr>
+Date:   Wed Jan 26 16:46:36 2022 +0100
+
+    ordonnance view final
+
+[33mcommit 35553bc6509b84564d1143315d3a53dc216c9e5b[m
+Merge: d4a68ba c140fcb
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Wed Jan 26 10:24:37 2022 -0500
+
+    Merge pull request #40 from CoreDel/localGuillaume
+    
+    des petits trous
+
+[33mcommit c140fcb04d85446c4761d72e2ab924d910d10fb4[m
+Author: VeroGui <veroguillaume@hotmail.fr>
+Date:   Wed Jan 26 14:38:44 2022 +0100
+
+    des petits trous
+
+[33mcommit d4a68ba80fc46257b76e00c1a147b362dd78e9ba[m
+Merge: 5c4f5ca 8f569d0
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Wed Jan 26 03:41:05 2022 -0500
+
+    Merge pull request #39 from CoreDel/localCorentin
+    
+    Local corentin
+
+[33mcommit 5c4f5ca2488b83caae855e2a344c6f50eead8ef6[m
+Merge: ccc5f58 7e6095c
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Wed Jan 26 03:40:44 2022 -0500
+
+    Merge pull request #37 from CoreDel/localNico
+    
+    ordonnance facture
+
+[33mcommit 8f569d0f35eb26533a853456cea9a4130032ae1c[m[33m ([m[1;31morigin/localCorentin[m[33m)[m
+Author: root <root@localhost.localdomain>
+Date:   Wed Jan 26 03:39:05 2022 -0500
+
+    Dossier medical
+
+[33mcommit fdaabbaa8271741f5d3a48e4c304d5fad9810f67[m
+Merge: 7e6095c ccc5f58
+Author: NicolasBobba <nicolasbobba@orange.fr>
+Date:   Wed Jan 26 09:09:25 2022 +0100
+
+    Merge branch 'master' of https://github.com/CoreDel/frontHopital
+
+[33mcommit ccc5f58e2c65c6440113d631e6e2fbd557b86a98[m
+Merge: 4f3d569 4ca7716
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Tue Jan 25 11:36:25 2022 -0500
+
+    Merge pull request #38 from CoreDel/localCorentin
+    
+    Local corentin
+
+[33mcommit e27e366fe7fd4fa96beb8d3959b74a18b3ca7d42[m
+Merge: 4ca7716 4f3d569
+Author: root <root@localhost.localdomain>
+Date:   Tue Jan 25 11:32:28 2022 -0500
+
+    Merge branch 'master' of https://github.com/CoreDel/frontHopital
+
+[33mcommit 4ca77166619b093ece192b0cdc157f4989a14ec8[m
+Author: root <root@localhost.localdomain>
+Date:   Tue Jan 25 11:30:41 2022 -0500
+
+    avancement formulaire
+
+[33mcommit 7e6095cb07581cbe3a05d354b6c09e7effc9f488[m
+Author: NicolasBobba <nicolasbobba@orange.fr>
+Date:   Tue Jan 25 17:13:05 2022 +0100
+
+    ordonnance facture
+
+[33mcommit 4f3d569ca27f5a760bfdd06dbf95ef667ca4b735[m
+Merge: b41d013 9a78e92
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Tue Jan 25 11:06:08 2022 -0500
+
+    Merge pull request #36 from CoreDel/localGuillaume
+    
+    valerie damido
+
+[33mcommit 9a78e92a6710f6a9c734986661288caaa816f25a[m
+Author: VeroGui <veroguillaume@hotmail.fr>
+Date:   Tue Jan 25 17:04:37 2022 +0100
+
+    valerie damido
+
+[33mcommit b41d013ced06bc916f822926d1446a3afbece01b[m
+Merge: 3a8053e e1c1f97
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Tue Jan 25 10:01:00 2022 -0500
+
+    Merge pull request #35 from CoreDel/localGuillaume
+    
+    chambre manque edit mais je sais pas faire+petitdetail
+
+[33mcommit e1c1f97386bfd8d773222a65fb5cd5dca8b1bd01[m
+Author: VeroGui <veroguillaume@hotmail.fr>
+Date:   Tue Jan 25 15:59:36 2022 +0100
+
+    petit detail
+
+[33mcommit f1881ba6904ff672f9108078c12c6f3c4b9db274[m
+Author: VeroGui <veroguillaume@hotmail.fr>
+Date:   Tue Jan 25 15:39:07 2022 +0100
+
+    chambre manque edit mais je sais pas faire+petitdetail
+
+[33mcommit 0cc58db3feb916e4a8b958c2c7df6173d9518c0d[m
+Merge: 3a8053e 9646c3a
+Author: root <root@localhost.localdomain>
+Date:   Tue Jan 25 04:57:38 2022 -0500
+
+    Merge branch 'localCorentin'
+
+[33mcommit 9646c3aecb05791e77384f6eebae66fb627be797[m
+Author: root <root@localhost.localdomain>
+Date:   Tue Jan 25 04:55:52 2022 -0500
+
+    fusion
+
+[33mcommit 3a8053e27c745e9ac7d9988b3b0dba835f461347[m
+Merge: d5ea40a d05a69e
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Tue Jan 25 04:54:13 2022 -0500
+
+    Merge pull request #34 from CoreDel/localNico
+    
+    recup medic via ordonnance
+
+[33mcommit d5ea40a17447c3c8ac93dc64be498f58dc785114[m
+Merge: ebde337 b46464c
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Tue Jan 25 04:53:59 2022 -0500
+
+    Merge pull request #33 from CoreDel/localGuillaume
+    
+    ca me les brise
+
+[33mcommit d05a69e79f4b2f1bf7adf2624997b7cf2e0698d5[m
+Author: NicolasBobba <nicolasbobba@orange.fr>
+Date:   Tue Jan 25 10:37:15 2022 +0100
+
+    recup medic via ordonnance
+
+[33mcommit ebde337d8c202978d2070c6bc74449b39e3ed616[m
+Merge: 8c166ad 8346aac
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Tue Jan 25 04:37:12 2022 -0500
+
+    Merge pull request #32 from CoreDel/localCorentin
+    
+    formulaire avec le s bodel à cul
+
+[33mcommit 8346aac9ec0131854b4a1613bfeef393a54eef51[m
+Author: root <root@localhost.localdomain>
+Date:   Tue Jan 25 04:36:04 2022 -0500
+
+    formulaire avec le s bodel à cul
+
+[33mcommit b46464cf255ffabee8d54b79f306a387295d66d2[m
+Author: VeroGui <veroguillaume@hotmail.fr>
+Date:   Tue Jan 25 10:35:58 2022 +0100
+
+    ca me les brise
+
+[33mcommit 8c166adffee2359dcb0f2c321ede9e32d002c1d7[m
+Author: nobelios <nobelios@gmail.com>
+Date:   Tue Jan 25 10:31:45 2022 +0100
+
+    update
+
+[33mcommit 2580aa06f9963b8fbd543acb2164787f6b53b45c[m
+Author: nobelios <nobelios@gmail.com>
+Date:   Tue Jan 25 10:28:23 2022 +0100
+
+    update formulaire
+
+[33mcommit 3209fb8600263fbdaa8107182542c10efec4e788[m
+Merge: 2ab99ef 13350cc
+Author: nobelios <nobelios@gmail.com>
+Date:   Tue Jan 25 10:28:10 2022 +0100
+
+    Merge branch 'master' of https://github.com/CoreDel/frontHopital
+
+[33mcommit 13350cc45c31af16bc37e6ce741b573ebd88eb91[m
+Merge: 7ca33d3 fe6880a
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Tue Jan 25 04:27:54 2022 -0500
+
+    Merge pull request #30 from CoreDel/localNico
+    
+    ordonnance medicament
+
+[33mcommit 7ca33d314628add2e6d0ec5dac2ea6a5d7d74acd[m
+Merge: 43ece6b 5ceadf7
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Tue Jan 25 04:27:32 2022 -0500
+
+    Merge pull request #31 from CoreDel/localCorentin
+    
+    formulaire avec problème
+
+[33mcommit 2ab99efb1510787dd65d7c0ee1bf25cb4b997669[m
+Author: nobelios <nobelios@gmail.com>
+Date:   Tue Jan 25 10:27:28 2022 +0100
+
+    update formulaire
+
+[33mcommit 5ceadf758c745f668ec6820ba68f3d88e5810097[m
+Author: root <root@localhost.localdomain>
+Date:   Tue Jan 25 04:25:01 2022 -0500
+
+    formulaire avec problème
+
+[33mcommit 43ece6b5c423031cc7274140ce3088e5322b679d[m
+Author: nobelios <nobelios@gmail.com>
+Date:   Tue Jan 25 10:16:23 2022 +0100
+
+    maj formulaire consultation
+
+[33mcommit 4758080d34fb757ef702b3076545d281ce014577[m
+Author: nobelios <nobelios@gmail.com>
+Date:   Tue Jan 25 00:24:54 2022 +0100
+
+    update
+
+[33mcommit e2a725d09c80ce68c9a780a841442f44c87ef024[m
+Author: nobelios <nobelios@gmail.com>
+Date:   Mon Jan 24 18:19:59 2022 +0100
+
+    first commit
+
+[33mcommit fe6880a8fb8d289198d9bedf4bb619c07ee0ff43[m
+Author: NicolasBobba <nicolasbobba@orange.fr>
+Date:   Mon Jan 24 17:19:07 2022 +0100
+
+    ordonnance medicament
+
+[33mcommit 338c10837780d402a0a1e6983f8c7cc3b3ccff40[m
+Merge: 0825ef2 d9a2066
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Mon Jan 24 08:41:00 2022 -0500
+
+    Merge pull request #29 from CoreDel/localCorentin
+    
+    finalisation form utilisateur
+
+[33mcommit d9a20663741fe0662c078d5802da60845fabc550[m
+Author: root <root@localhost.localdomain>
+Date:   Mon Jan 24 08:37:45 2022 -0500
+
+    finalisation form utilisateur
+
+[33mcommit 0825ef2a04ed175065f64adcbd4d52ae26343b20[m
+Merge: 3e92e31 b175800
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Mon Jan 24 05:48:14 2022 -0500
+
+    Merge pull request #28 from CoreDel/localNico
+    
+    ordonnance pdf
+
+[33mcommit b1758000a6c2674323d7b1ef94acf8e29e752d55[m
+Author: NicolasBobba <nicolasbobba@orange.fr>
+Date:   Mon Jan 24 11:45:00 2022 +0100
+
+    ordonnance pdf
+
+[33mcommit 3e92e31372c89e6eb95fb6603087fda1ee465a4d[m
+Author: nobelios <nobelios@gmail.com>
+Date:   Fri Jan 21 16:57:56 2022 +0100
+
+    Ajout pages et service
+
+[33mcommit be5848d98fd150bfe88a4d0eb3fd77e37b7f4177[m
+Merge: 69f9f7b 1c35757
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Fri Jan 21 10:46:27 2022 -0500
+
+    Merge pull request #27 from CoreDel/localCorentin
+    
+    debut formulaire utilisateur
+
+[33mcommit 1c35757addf4f6122812f4dbfc05668e733a742c[m
+Author: root <root@localhost.localdomain>
+Date:   Fri Jan 21 10:43:35 2022 -0500
+
+    debut formulaire utilisateur
+
+[33mcommit 69f9f7b498d6715b96606d68d58004c2ddcce711[m
+Merge: 73595dd 834de88
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Fri Jan 21 10:39:32 2022 -0500
+
+    Merge pull request #25 from CoreDel/localNico
+    
+    html medic et ordonnance
+
+[33mcommit 73595ddfb4ccd6015fa4819e72308615eae2ac20[m
+Merge: 3d9a2cb 62c5db1
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Fri Jan 21 10:39:17 2022 -0500
+
+    Merge pull request #26 from CoreDel/localGuillaume
+    
+    Local guillaume
+
+[33mcommit 62c5db17cf9e264f2ef11ba1c419ba286358f700[m
+Merge: e9784fb fe26ba8
+Author: VeroGui <veroguillaume@hotmail.fr>
+Date:   Fri Jan 21 16:30:06 2022 +0100
+
+    avant validation
+
+[33mcommit fe26ba821642636c9e359c5a8c78fa14beb97b42[m
+Author: VeroGui <veroguillaume@hotmail.fr>
+Date:   Fri Jan 21 16:28:37 2022 +0100
+
+    avant validation
+
+[33mcommit 834de888cc75e4614bfa9c8e7ada8e14867338f1[m
+Author: NicolasBobba <nicolasbobba@orange.fr>
+Date:   Fri Jan 21 16:24:25 2022 +0100
+
+    ordonnance html
+
+[33mcommit 3d9a2cb5799dbdc6592989563ac8a0756ef00e2e[m
+Merge: a2c78fe e9784fb
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Fri Jan 21 09:41:47 2022 -0500
+
+    Merge pull request #24 from CoreDel/localGuillaume
+    
+    utilisiateur redirect
+
+[33mcommit e9784fb2347e8066b298c6fcd647077a089e4a86[m
+Author: VeroGui <veroguillaume@hotmail.fr>
+Date:   Fri Jan 21 15:36:57 2022 +0100
+
+    utilisiateur redirect
+
+[33mcommit b60430e6f150f9ba21d56772b9369aaf8892fceb[m
+Merge: a738e4b a2c78fe
+Author: NicolasBobba <nicolasbobba@orange.fr>
+Date:   Fri Jan 21 15:32:23 2022 +0100
+
+    Merge branch 'master' of https://github.com/CoreDel/frontHopital
+
+[33mcommit a738e4b274228e83b7e293e6173a4c949c45d312[m
+Author: NicolasBobba <nicolasbobba@orange.fr>
+Date:   Fri Jan 21 15:32:18 2022 +0100
+
+    debut html 2
+
+[33mcommit a2c78feb5c5c45cd2fe81ab65c9b49a34bd2e81e[m
+Merge: 193adc3 79590b7
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Fri Jan 21 09:31:44 2022 -0500
+
+    Merge pull request #23 from CoreDel/localGuillaume
+    
+    medoc
+
+[33mcommit 79590b7fc5269f87af79ddcbdafa1c2a4f1492ee[m
+Author: VeroGui <veroguillaume@hotmail.fr>
+Date:   Fri Jan 21 15:30:37 2022 +0100
+
+    medoc
+
+[33mcommit c90f8e65562319d8ca83ae66f76c15b41c39d6dd[m
+Merge: 84d88a2 193adc3
+Author: NicolasBobba <nicolasbobba@orange.fr>
+Date:   Fri Jan 21 15:21:38 2022 +0100
+
+    Merge branch 'master' of https://github.com/CoreDel/frontHopital
+
+[33mcommit 193adc38da27d53f2d0048f0c096fababa7e7aa3[m
+Merge: 441d368 2ebc928
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Fri Jan 21 09:20:48 2022 -0500
+
+    Merge pull request #22 from CoreDel/localGuillaume
+    
+    redirect
+
+[33mcommit 2ebc9285ee02c4a2d50313c0127dc97bdb35639b[m
+Author: VeroGui <veroguillaume@hotmail.fr>
+Date:   Fri Jan 21 15:20:08 2022 +0100
+
+    redirect
+
+[33mcommit 441d36896cc0c6d852873f0bd7270df6e9d71c4c[m
+Merge: 6246c84 cf9f5ac
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Fri Jan 21 09:06:17 2022 -0500
+
+    Merge pull request #21 from CoreDel/localCorentin
+    
+    petite reparation
+
+[33mcommit cf9f5acd53f70fe97dfe2b7d2b2552a08f3e0cb8[m
+Author: root <root@localhost.localdomain>
+Date:   Fri Jan 21 09:05:13 2022 -0500
+
+    petite reparation
+
+[33mcommit 84d88a27752f24c9f1544d9c6c2971ffc072ebfe[m
+Merge: 19315d4 6246c84
+Author: NicolasBobba <nicolasbobba@orange.fr>
+Date:   Fri Jan 21 14:54:49 2022 +0100
+
+    Merge branch 'master' of https://github.com/CoreDel/frontHopital
+
+[33mcommit 19315d44d91b8c4fbd15657d4d417f32ef0cf4f7[m
+Author: NicolasBobba <nicolasbobba@orange.fr>
+Date:   Fri Jan 21 14:54:40 2022 +0100
+
+    les html
+
+[33mcommit 6246c84399c72ad6fa35122b78cfb14d430e86bc[m
+Merge: 31aa82a 639edde
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Fri Jan 21 08:52:32 2022 -0500
+
+    Merge pull request #20 from CoreDel/localCorentin
+    
+    correction emplacment components
+
+[33mcommit 31aa82acac6b1841ef60803e5c96b309f3064e23[m
+Merge: 41a6619 8b05eab
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Fri Jan 21 08:51:58 2022 -0500
+
+    Merge pull request #19 from CoreDel/localPaul
+    
+    Local paul
+
+[33mcommit 639eddea5c57eb5bd98d800f5baef40b02c670e0[m
+Author: root <root@localhost.localdomain>
+Date:   Fri Jan 21 08:49:51 2022 -0500
+
+    correction emplacment components
+
+[33mcommit 8b05eabffde0744ff761ebaf157f2d6e8e4e1c1e[m[33m ([m[1;31morigin/localPaul[m[33m)[m
+Author: paulBaudouin <paulbaudouin@zohomail.eu>
+Date:   Fri Jan 21 14:32:52 2022 +0100
+
+    des trucs
+
+[33mcommit 41a66196ae08f8747dc61761c9c462137c67dc21[m
+Merge: 204241f 57ebc66
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Fri Jan 21 08:20:24 2022 -0500
+
+    Merge pull request #18 from CoreDel/localCorentin
+    
+    Local corentin
+
+[33mcommit 57ebc6665f6a44064751c552d4fdf3994b3e9475[m
+Author: root <root@localhost.localdomain>
+Date:   Fri Jan 21 08:19:19 2022 -0500
+
+    dossier medical et utilisateur
+
+[33mcommit 204241f7ceca5e121700fbedbd3e0114f9d9ab97[m
+Merge: dd50315 5858803
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Fri Jan 21 07:31:35 2022 -0500
+
+    Merge pull request #17 from CoreDel/localNico
+    
+    component
+
+[33mcommit 5858803a8217153e3e2ba470ad460b81e70c0071[m
+Author: NicolasBobba <nicolasbobba@orange.fr>
+Date:   Fri Jan 21 13:28:30 2022 +0100
+
+    component
+
+[33mcommit 1985fb06b5e416a6e747483c70d424dbb4f5b788[m
+Merge: 8bcac8f dd50315
+Author: paulBaudouin <paulbaudouin@zohomail.eu>
+Date:   Fri Jan 21 11:56:27 2022 +0100
+
+    Merge branch 'master' into localPaul
+
+[33mcommit 8bcac8f26cd73045b93d5a7825082706a10284e4[m
+Author: paulBaudouin <paulbaudouin@zohomail.eu>
+Date:   Fri Jan 21 11:54:47 2022 +0100
+
+    methode crud component role et facture
+
+[33mcommit dd503153bc1463b9b617eac9fff4f2e8a328f9da[m
+Merge: fb39d4c 8647fb9
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Fri Jan 21 05:53:30 2022 -0500
+
+    Merge pull request #15 from CoreDel/localGuillaume
+    
+    update service
+
+[33mcommit fb39d4c4da8865542771068c699758d5611cb9f9[m
+Merge: 6faeef1 82f2715
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Fri Jan 21 05:52:58 2022 -0500
+
+    Merge pull request #16 from CoreDel/localNico
+    
+    Local nico
+
+[33mcommit 8647fb995e9940fefdfca3d57d058f58ee7055ae[m
+Merge: f2dbff9 199859d
+Author: VeroGui <veroguillaume@hotmail.fr>
+Date:   Fri Jan 21 11:50:56 2022 +0100
+
+    fils de pute
+
+[33mcommit 82f271594b9716a403119ad0cc1ae3b9eaf04576[m
+Author: NicolasBobba <nicolasbobba@orange.fr>
+Date:   Fri Jan 21 11:49:30 2022 +0100
+
+    medicament dossier
+
+[33mcommit 199859d220696cd46217dca3e5984a5d0232124c[m
+Author: VeroGui <veroguillaume@hotmail.fr>
+Date:   Fri Jan 21 11:47:48 2022 +0100
+
+    testfronfron
+
+[33mcommit 209d81ba31025581b391cdad5d6b80aaa42ab23e[m
+Merge: 73d55c0 6faeef1
+Author: NicolasBobba <nicolasbobba@orange.fr>
+Date:   Fri Jan 21 11:47:31 2022 +0100
+
+    Merge branch 'master' of https://github.com/CoreDel/frontHopital
+
+[33mcommit f2dbff916687b900c70f475995262dcb972cee45[m
+Author: VeroGui <veroguillaume@hotmail.fr>
+Date:   Fri Jan 21 11:37:32 2022 +0100
+
+    update service
+
+[33mcommit 2f9d73474bc9b8c83ef26aaffabf635d4fee5acd[m
+Merge: 6d67939 6faeef1
+Author: root <root@localhost.localdomain>
+Date:   Fri Jan 21 05:33:31 2022 -0500
+
+    Merge branch 'master' of https://github.com/CoreDel/frontHopital
+
+[33mcommit 6d679395928751f465906465cc2e42baa9109370[m
+Merge: 66412f7 d42f978
+Author: root <root@localhost.localdomain>
+Date:   Fri Jan 21 05:33:25 2022 -0500
+
+    fusion
+
+[33mcommit 6faeef1f975ab34c0ffb16f2e5f3dbc7d8230e28[m
+Merge: d42f978 538f58f
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Fri Jan 21 05:29:06 2022 -0500
+
+    Merge pull request #14 from CoreDel/localPaul
+    
+    methode crud role et facture
+
+[33mcommit 66412f7251d0cd82df15fa9a564a560b00084133[m
+Author: root <root@localhost.localdomain>
+Date:   Fri Jan 21 05:21:54 2022 -0500
+
+    utilisateur service
+
+[33mcommit 73d55c03bafcb5af776a9e8d92624abf03db1b46[m
+Merge: 67d8b26 d42f978
+Author: NicolasBobba <nicolasbobba@orange.fr>
+Date:   Fri Jan 21 11:18:00 2022 +0100
+
+    Merge branch 'master' of https://github.com/CoreDel/frontHopital
+
+[33mcommit 538f58f269fb75fa22670c76fa56082f960f46df[m
+Author: paulBaudouin <paulbaudouin@zohomail.eu>
+Date:   Fri Jan 21 11:05:04 2022 +0100
+
+    methode crud role et facture
+
+[33mcommit d42f978dacf68103a4bb4a05de2c4d5479c38242[m
+Merge: 78fa66c a2732cc
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Fri Jan 21 04:51:06 2022 -0500
+
+    Merge pull request #13 from CoreDel/localGuillaume
+    
+    modif module.ts
+
+[33mcommit a2732cc7a31f7060231373ba165130960288b935[m
+Author: VeroGui <veroguillaume@hotmail.fr>
+Date:   Fri Jan 21 10:49:57 2022 +0100
+
+    modif module.ts
+
+[33mcommit 78fa66ce728bf0bc64da2727126859a182bd1b99[m
+Merge: c53e4a0 1873e92
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Fri Jan 21 04:49:48 2022 -0500
+
+    Merge pull request #12 from CoreDel/localGuillaume
+    
+    modif hopital/hopital
+
+[33mcommit 1873e921efa071949cf8e406674a6488f9baedd8[m
+Author: VeroGui <veroguillaume@hotmail.fr>
+Date:   Fri Jan 21 10:46:17 2022 +0100
+
+    modif hopital/hopital
+
+[33mcommit c53e4a05650eb01b5cd6ac11b7dbb06d3b88b55f[m
+Merge: e3e692f 45efa6c
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Fri Jan 21 04:38:56 2022 -0500
+
+    Merge pull request #11 from CoreDel/geoffreyLocal
+    
+    Geoffrey local
+
+[33mcommit 45efa6c2f4c198be048ab45755abd9f6a0107f15[m[33m ([m[1;31morigin/geoffreyLocal[m[33m)[m
+Merge: 37b532a 0292910
+Author: nobelios <nobelios@gmail.com>
+Date:   Fri Jan 21 10:35:25 2022 +0100
+
+    test
+
+[33mcommit 67d8b263916936c98e55775c3867ba8e2bbbd5a8[m
+Merge: 35b8644 e3e692f
+Author: NicolasBobba <nicolasbobba@orange.fr>
+Date:   Fri Jan 21 10:30:22 2022 +0100
+
+    Merge branch 'master' of https://github.com/CoreDel/frontHopital
+
+[33mcommit 35b8644bb605b0029a35f91f12639c897c652b94[m
+Author: NicolasBobba <nicolasbobba@orange.fr>
+Date:   Fri Jan 21 10:30:17 2022 +0100
+
+    role pb
+
+[33mcommit 37b532ae7e84d495688d40749ad5ef536b541bb3[m
+Author: nobelios <nobelios@gmail.com>
+Date:   Fri Jan 21 10:27:25 2022 +0100
+
+    maj
+
+[33mcommit e3e692fa3bb2b5f9413ff91c4129fe49bc34753a[m
+Merge: b9d876e 930e2e3
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Fri Jan 21 04:27:24 2022 -0500
+
+    Merge pull request #10 from CoreDel/localGuillaume
+    
+    Local guillaume
+
+[33mcommit 930e2e3f0e40e735350c17b09614cdc3216e8173[m
+Merge: 0cc42eb b9d876e
+Author: VeroGui <veroguillaume@hotmail.fr>
+Date:   Fri Jan 21 10:21:33 2022 +0100
+
+    fr
+
+[33mcommit 0cc42eb10dc23b352d1f465c6a39a1ce712b709b[m
+Author: VeroGui <veroguillaume@hotmail.fr>
+Date:   Fri Jan 21 10:18:15 2022 +0100
+
+    frontext
+
+[33mcommit b9d876e38153f2583de6f61960c22638c9c332fb[m
+Merge: 29ab8f8 0292910
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Fri Jan 21 04:09:07 2022 -0500
+
+    Merge pull request #9 from CoreDel/geoffreyLocal
+    
+    Geoffrey local
+
+[33mcommit 02929103638a21155d274ab4bd75bbc4f270e268[m
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Fri Jan 21 04:06:54 2022 -0500
+
+    Update app.module.ts
+
+[33mcommit 08b5224566b973c74069b18743cf7f2105047317[m
+Merge: f6144aa 29ab8f8
+Author: nobelios <nobelios@gmail.com>
+Date:   Fri Jan 21 09:55:03 2022 +0100
+
+    Merge branch 'master' of https://github.com/CoreDel/frontHopital into geoffreyLocal
+
+[33mcommit f6144aa8c41fd9902ed26686ce8cb9a37ae474e1[m
+Merge: 81e75b0 cda2586
+Author: nobelios <nobelios@gmail.com>
+Date:   Fri Jan 21 09:54:42 2022 +0100
+
+    1st commit
+
+[33mcommit 29ab8f8d0a4cfb42f6e9351a2a792c681f765336[m
+Merge: cda2586 75f1ac5
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Fri Jan 21 03:53:57 2022 -0500
+
+    Merge pull request #8 from CoreDel/localNico
+    
+    app module
+
+[33mcommit cda258609f711f01c5b0355427a9d0a54d5e3bf3[m
+Merge: 6d1bdbc 0dce735
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Fri Jan 21 03:53:43 2022 -0500
+
+    Merge pull request #7 from CoreDel/localPaul
+    
+    pages role et facture
+
+[33mcommit 75f1ac587acb22edecb422d304f4f5704305b522[m
+Author: NicolasBobba <nicolasbobba@orange.fr>
+Date:   Fri Jan 21 09:49:37 2022 +0100
+
+    app module
+
+[33mcommit 81e75b04a70e2276b414683ca3ad8ae6582dc2cb[m
+Author: nobelios <nobelios@gmail.com>
+Date:   Fri Jan 21 09:48:43 2022 +0100
+
+    first commit
+
+[33mcommit 0dce735fa723bbc35d0ddd65a1cb7268a5284ae5[m
+Author: paulBaudouin <paulbaudouin@zohomail.eu>
+Date:   Fri Jan 21 09:46:50 2022 +0100
+
+    pages role et facture
+
+[33mcommit 6d1bdbcb420553c16da553bf493e2f58c8d7e753[m
+Merge: 909f552 46b7cb5
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Thu Jan 20 11:20:11 2022 -0500
+
+    Merge pull request #6 from CoreDel/localCorentin
+    
+    ajout dossier medical
+
+[33mcommit 46b7cb5a6c3526c6d23c5711c0332f762fa01726[m
+Author: root <root@localhost.localdomain>
+Date:   Thu Jan 20 11:17:55 2022 -0500
+
+    ajout dossier medical
+
+[33mcommit 909f5526eb73e285afdbe3b1a8770c32e6c966fa[m
+Merge: 9035873 899be94
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Thu Jan 20 11:01:39 2022 -0500
+
+    Merge pull request #5 from CoreDel/localPaul
+    
+    role et facture
+
+[33mcommit 903587363a3b329b728f7af7a7797683a4d019c7[m
+Merge: 902a09b ea2a3e3
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Thu Jan 20 11:01:26 2022 -0500
+
+    Merge pull request #4 from CoreDel/localGuillaume
+    
+    front Guillaume
+
+[33mcommit ea2a3e39ec5bfe976845b2eccf06c3d576674442[m
+Merge: e5328d4 902a09b
+Author: VeroGui <97741062+VeroGui@users.noreply.github.com>
+Date:   Thu Jan 20 17:01:08 2022 +0100
+
+    Merge branch 'master' into localGuillaume
+
+[33mcommit 899be94a5bdd4ec607b721a6a769d0814969f0c4[m
+Author: paulBaudouin <paulbaudouin@zohomail.eu>
+Date:   Thu Jan 20 16:57:12 2022 +0100
+
+    role et facture
+
+[33mcommit e5328d4dc37bc0c3b14b68cf85de2d032c5c20ac[m
+Author: VeroGui <veroguillaume@hotmail.fr>
+Date:   Thu Jan 20 16:56:04 2022 +0100
+
+    front Guillaume
+
+[33mcommit 902a09bc3f6fdf8fda1a139a1821adfdbca20e15[m
+Merge: 227b154 c889be1
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Thu Jan 20 10:53:10 2022 -0500
+
+    Merge pull request #3 from CoreDel/localNico
+    
+    angular json
+
+[33mcommit c889be18cd91219f6e18473c28b351ab903d961c[m
+Author: NicolasBobba <nicolasbobba@orange.fr>
+Date:   Thu Jan 20 16:46:26 2022 +0100
+
+    angular json
+
+[33mcommit 227b15405e596e3bcff7a79368bef3e2adbe02ba[m
+Merge: d10b0f4 c0a8f86
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Thu Jan 20 10:03:52 2022 -0500
+
+    Merge pull request #2 from CoreDel/localCorentin
+    
+    folder v2
+
+[33mcommit c0a8f867aa0b9fb4d73b039caf2cd4be14a021c4[m
+Author: root <root@localhost.localdomain>
+Date:   Thu Jan 20 10:02:51 2022 -0500
+
+    folder v2
+
+[33mcommit d10b0f48f4f04a168416e61bbfb2437fd923c63b[m
+Merge: 1b58e3a 5d3ca36
+Author: CoreDel <97732738+CoreDel@users.noreply.github.com>
+Date:   Thu Jan 20 09:53:36 2022 -0500
+
+    Merge pull request #1 from CoreDel/localCorentin
+    
+    folders
+
+[33mcommit 5d3ca361c93b572359d4a3b7ba1f1550e6767a86[m
+Author: root <root@localhost.localdomain>
+Date:   Thu Jan 20 09:51:01 2022 -0500
+
+    folders
+
+[33mcommit 1b58e3a0bc5880c3ae7358d472fb6f4b7a908e5a[m
+Author: root <root@localhost.localdomain>
+Date:   Thu Jan 20 09:06:08 2022 -0500
+
+    start front
+
+[33mcommit 68be23fc8951f22be73fe3d240f32e2397b0b45c[m
+Author: root <root@localhost.localdomain>
+Date:   Thu Jan 20 08:56:30 2022 -0500
+
+    start front

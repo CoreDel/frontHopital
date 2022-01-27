@@ -13,7 +13,7 @@ export class ChambreComponent implements OnInit {
   chambre: Chambre= new Chambre;
   numChambre: string;
   chambreExtra : Chambre[];
-  disponibilite : boolean =true;
+  disponibilite : string ="disponible";
 
 
   constructor(private chambreService: ChambreService) { }
@@ -32,11 +32,11 @@ export class ChambreComponent implements OnInit {
     this.chambreService.findAll().subscribe(data => {this.chambres =data})
   }
   deleteChambre(id: number) {
-    this.chambreService.delete(id).subscribe(() => { this.findAll()})
+    this.chambreService.deleteChambre(id).subscribe(() => { this.findAll()})
   }
   saveChambre() {
-    this.chambre.dispoChambre=true;
-    this.chambreService.save(this.chambre).subscribe(() => {
+    this.chambre.dispoChambre="disponible";
+    this.chambreService.saveChambre(this.chambre).subscribe(() => {
       this.findAll(); // Mettre à jour la table
       this.chambre = new Chambre(); // pour vider le formulaire
     })

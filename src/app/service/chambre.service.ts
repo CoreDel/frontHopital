@@ -16,11 +16,11 @@ export class ChambreService {
     return this.httpClient.get(this.baseURL);
   }
 
-  public delete(id:number): Observable<any> {
+  public deleteChambre(id:number): Observable<any> {
     return this.httpClient.delete(this.baseURL+"/"+id);
   }
 
-  public save(chambre:any): Observable<any> {
+  public saveChambre(chambre:any): Observable<any> {
     return this.httpClient.post(this.baseURL, chambre);
   }
   public updateChambre(idC:number, chambre:any): Observable<any>{
@@ -29,7 +29,7 @@ export class ChambreService {
   public findByNumChambre(numChambre:number):Observable<any> {
     return this.httpClient.get(this.baseURL+'/'+numChambre);
   }
-  public findByDispoChambre(disponibilite:boolean):Observable<any>{
+  public findByDispoChambre(disponibilite:string):Observable<any>{
     return this.httpClient.get('http://localhost:9090/chambresDisponibles');
   }
 }

@@ -12,7 +12,7 @@
         <div class="form-group">
           <label class="form-control-label">Numero de chambre</label>
           <input type="text" class="form-control form-control-alternative" name="numChambre"
-            [(ngModel)]="chambre.numChambre" placeholder="NumeroChambre">
+            [(ngModel)]="chambre.numChambre" placeholder="Numero de la Chambre">
         </div>
       </div>
       <div class="col-lg-4">
@@ -81,14 +81,14 @@
       </td>
       <div class="col-lg-6">
         <div class="input-group mb-3">
-          <input type="number" class="form-control form-control-alternative" name="dC" [(ngModel)]="chambre.dispoChambre">
+          <input type="text" class="form-control form-control-alternative" name="dispoChambre" [(ngModel)]="chambre.dispoChambre">
           <div class="input-group-append">
             <button class="btn btn-outline-secondary" id="button-addon2" (click)="updateChambre(c.idChambre)">Modifier</button>
           </div>
         </div>
       </div>
       <td>
-        <button class="btn btn-danger" (click)="deleteMedicament(c.idChambre)">Supprimer</button>
+        <button class="btn btn-danger" (click)="deleteChambre(c.idChambre)">Supprimer</button>
       </td>
     </tr>
   </tbody>
