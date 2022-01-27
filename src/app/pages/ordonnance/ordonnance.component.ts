@@ -31,7 +31,7 @@ export class OrdonnanceComponent implements OnInit {
 
   ngOnInit(): void {
     this.findAll();
-    this.findAllMedic();
+    //this.findAllMedic();
   }
 
   findAll() {
