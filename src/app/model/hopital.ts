@@ -8,5 +8,5 @@ export class Hopital {
     numTelHopital!:number;
     adresse!:Adresse;
     chambres!:Chambre[];
-    utilisateurs!:Utilisateur;
+    utilisateurs!:Utilisateur[];
 }
