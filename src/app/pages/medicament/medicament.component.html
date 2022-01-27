@@ -59,6 +59,7 @@
       <th scope="col">Nom</th>
       <th scope="col">Description</th>
       <th scope="col">Stock</th>
+      <th scope="col">Modifier le stock</th>
       <th scope="col">Suppression</th>
     </tr>
   </thead>
@@ -72,6 +73,16 @@
       </td>
       <td>
         {{m.quantMedicament}}
+      </td>
+      <td>
+        <div class="col-lg-6">
+          <div class="input-group mb-3">
+            <input type="number" class="form-control form-control-alternative" name="quantMed" [(ngModel)]="medicament.quantMedicament" placeholder="Combien ?" >
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" id="button-addon2" (click)="updateMedicament(m.idMedicament)">Modifier</button>
+            </div>
+          </div>
+        </div>
       </td>
       <td>
         <button class="btn btn-danger" (click)="deleteMedicament(m.idMedicament)">Supprimer</button>
