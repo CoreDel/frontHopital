@@ -38,4 +38,8 @@ export class MedicamentComponent implements OnInit {
   saveMedicament() {
     this.medicamentService.save(this.medicament).subscribe( () => {this.findAll(); this.medicament = new Medicament();});
   }
+
+  updateMedicament(id:number) {
+    this.medicamentService.update(id, this.medicament).subscribe( () => {this.findAll()});
+  }
 }
