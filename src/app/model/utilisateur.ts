@@ -1,3 +1,5 @@
+import { Role } from "./role";
+
 export class Utilisateur {
     idUtilisateur!:number;
     nomUtilisateur!:string;
@@ -5,5 +7,8 @@ export class Utilisateur {
     username!:string;
     password!:string;
     age!:number;
+
+    //manytomany role
+    roles!:Role[];
 
 }
