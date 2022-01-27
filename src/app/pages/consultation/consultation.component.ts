@@ -11,6 +11,7 @@ export class ConsultationComponent implements OnInit {
   consultations: Consultation[];
   consultation: Consultation = new Consultation();
   titrePage = 'Consultation';
+  FormAddConsultationTitle = 'Planifier une consultation';
 
   constructor(private consultationService: ConsultationService) { }
 
