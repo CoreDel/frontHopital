@@ -1,12 +1,12 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { HttpClient } from '@angular/common/http';
-import { Consultation } from '../model/consultation';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ConsultationService {
+  
   private baseURL="http://localhost:9090/consultations";
   
   constructor(private httpClient:HttpClient) { }
@@ -17,8 +17,8 @@ export class ConsultationService {
   }
 
   //findOne
-  public findOne(idF:number) : Observable<any>{
-    return this.httpClient.get(this.baseURL+"/"+idF);
+  public findOne(id:number) : Observable<any>{
+    return this.httpClient.get(this.baseURL+"/"+id);
   }
 
   //findBy
@@ -30,7 +30,7 @@ export class ConsultationService {
   public saveConsultation(consultation:any): Observable<any>{
     return this.httpClient.post(this.baseURL, consultation);
   }
-
+  
   //update
   public updateConsultation(idc:number, consultation:any): Observable<any>{
     return this.httpClient.put(this.baseURL+"/"+idc, consultation);
