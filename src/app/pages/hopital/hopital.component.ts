@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from 'src/app/app.service';
 import { Hopital } from 'src/app/model/hopital';
 import { Medicament } from 'src/app/model/medicament';
 import { Utilisateur } from 'src/app/model/utilisateur';
@@ -18,7 +19,7 @@ export class HopitalComponent implements OnInit {
   medecins: Utilisateur[];
   medicaments: Medicament[];
 
-  constructor(private hopitalService: HopitalService) { }
+  constructor(private hopitalService: HopitalService, private appService:AppService) { }
 
   ngOnInit(): void {
     this.findAll()
@@ -54,5 +55,8 @@ export class HopitalComponent implements OnInit {
   }
   listMedicament(){
     this.hopitalService.listMedicament().subscribe(data =>{this.medicaments= data});
+  }
+  authenticated(){
+    return this.appService.authenticated;
   }
 }

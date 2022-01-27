@@ -1,7 +1,7 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgModule } from '@angular/core';
+import { Injectable, NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpHandler, HttpInterceptor, HttpRequest, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -23,9 +23,17 @@ import { MedicamentComponent } from './pages/medicament/medicament.component';
 import { UtilisateurComponent } from './pages/utilisateur/utilisateur.component';
 import { DossiermedicalComponent } from './pages/dossiermedical/dossiermedical.component';
 import { OrdonnanceComponent } from './pages/ordonnance/ordonnance.component';
-
-
-
+import { AppService } from './app.service';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+@Injectable()
+export class XhrInterceptor implements HttpInterceptor {
+intercept(req:HttpRequest<any>, next: HttpHandler){
+  const xhr=req.clone({
+    headers: req.headers.set('X-Requested-With','XMLHttpRequest')
+  });
+  return next.handle(xhr);
+}
+}
 
 @NgModule({
   imports: [
@@ -56,7 +64,13 @@ import { OrdonnanceComponent } from './pages/ordonnance/ordonnance.component';
 
 
   ],
-  providers: [],
+  providers: [
+    AppService,
+    {
+      provide: LocationStrategy,
+      useClass: HashLocationStrategy
+    },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
