@@ -50,4 +50,8 @@ export class ChambreComponent implements OnInit {
   findByDispoChambre(){
     this.chambreService.findByDispoChambre(this.disponibilite).subscribe(data => {this.chambres = data;});
   }
+
+  updateChambre(id:number) {
+    this.chambreService.updateChambre(id, this.chambre).subscribe( () => {this.findAll()});
+  }
 }
