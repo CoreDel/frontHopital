@@ -5,7 +5,7 @@
 <div class="container-fluid d-flex align-items-center">
   <div class="row">
     <div class="col-lg-7 col-md-10">
-      <h2 class="display-2 text-white">Planifier une consultation</h2>
+      <h2 class="display-2 text-white">{{ titrePage }}</h2>
       <p class="text-white mt-0 mb-6"></p>
       <!--<a href="#!" class="btn btn-info">Edit profile</a>-->
       <br>
@@ -13,6 +13,8 @@
     </div>
   </div>
 </div>
+
+<!-- Formulaire pour planifier une consultation -->
 <div class="container-fluid mt--7">
 <div class="row">
   <!--<div class="col-xl-4 order-xl-2 mb-5 mb-xl-0">
@@ -84,45 +86,49 @@
      
       <div class="card-body">
         <form (ngSubmit)="saveConsultation()">
-          <h6 class="heading-small text-muted mb-4">Formulaire</h6>
+          <h6 class="heading-small text-muted mb-4">Planifier une consultation</h6>
           <div class="pl-lg-8">
             <div class="row">
               <div class="col-lg-6">
                 <div class="form-group">
                   <label class="form-control-label">IdPatient</label>
-                  <input [(ngModel)]="consultation.idPatient" type="text" class="form-control form-control-alternative" placeholder="Identitifiant du patient">
+                  <input [(ngModel)]="consultation.idPatient" type="text" name="idPatientC" class="form-control form-control-alternative" placeholder="Identitifiant du patient">
                 </div>
               </div>
             </div>
+
             <div class="row">
               <div class="col-lg-6">
                 <div class="form-group">
                   <label class="form-control-label">IdMedecin</label>
-                  <input [(ngModel)]="consultation.idMedecin" type="text" class="form-control form-control-alternative" placeholder="Identitifiant du medecin">
+                  <input [(ngModel)]="consultation.idMedecin" type="text" name="idMedecinC" class="form-control form-control-alternative" placeholder="Identitifiant du medecin">
                 </div>
               </div>
             </div>
+
             <div class="row">
               <div class="col-lg-6">
                 <div class="form-group">
-                  <label class="form-control-label">Date</label>
-                  <input [(ngModel)]="consultation.date" type="date" min="2022-01-25" max="2023git add-01-25" class="form-control form-control-alternative" placeholder="">
+                  <label class="form-control-label">Date et heure</label>
+                  <input [(ngModel)]="consultation.date" name="dateC" type="datetime-local" min="2022-01-25T08:00" max="2023-01-25T22:00" step="1800" class="form-control form-control-alternative" placeholder="">
                 </div>
               </div>
             </div>
+
             <div class="row">
               <div class="col-lg-6">
                 <div class="form-group">
                   <label class="form-control-label">Motif Visite</label>
-                  <input [(ngModel)]="consultation.motifConsultation" type="text" class="form-control form-control-alternative" placeholder="Motif de la consultation">
+                  <input [(ngModel)]="consultation.motifConsultation" type="text" name="motifC" class="form-control form-control-alternative" placeholder="Motif de la consultation">
                 </div>
               </div>
             </div>
+
             <div class="row">
               <div class="col-lg-6">
                 <div class="form-group">
                   <label class="form-control-label"></label>
-                  <button type="button" class="btn btn-success">Valider</button>
+                  <button class="btn btn-success">Valider</button>
                 </div>
               </div>
             </div>
@@ -173,5 +179,60 @@
       </div>
     </div>
   </div>
+</div>
+
+<br>
+
+<div class="row">
+    <div class="col-xl-8 order-xl-1">
+        <div class="card bg-secondary shadow">
+        <div class="card-header bg-white border-0">
+            <div class="row align-items-center">
+            <div class="col-8">
+                <h3 class="mb-0">Historique des consultations</h3>
+            </div>
+            <div class="col-4 text-right">
+                <!--<a href="#!" class="btn btn-sm btn-primary">Settings</a>-->
+                <br>
+            </div>
+            </div>
+        </div>
+        
+        <div class="card-body">
+            <button class="btn btn-info" (click)="findAll()">Rafraîchir</button>
+            <br>
+            <table class="table align-items-center table-flush">
+            <thead class="thead-light">
+                <tr>
+                <th scope="col">Id consultation</th>
+                <th scope="col">Id patient</th>
+                <th scope="col">Id Medecin</th>
+                <th scope="col">Date</th>
+                <th></th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let c of consultations">
+                <tr>
+                <th scope="row">
+                    {{c.idConsultation}}
+                </th>
+                <th scope="row">
+                    {{c.idPatient}}
+                </th>
+                <th scope="row">
+                    {{c.idMedecin}}
+                </th>
+                <th scope="row">
+                    {{c.date}}
+                </th>
+                <td>
+                    <button class="btn btn-danger" (click)="deleteConsultation(c.idConsultation)">Supprimer</button>
+                </td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
 </div>
 </div>
