@@ -11,6 +11,7 @@ pdfMake.vfs = pdfFonts.pdfMake.vfs;
 import htmlToPdfmake from 'html-to-pdfmake';
 import { Consultation } from 'src/app/model/consultation';
 import { MedicamentService } from 'src/app/service/medicament.service';
+import { Medicament } from 'src/app/model/medicament';
 
 @Component({
   selector: 'app-ordonnance',
@@ -24,12 +25,13 @@ export class OrdonnanceComponent implements OnInit {
   medicaments:any;
   factures:any;
   consultations:any;
-  allMedic:any;
+  allMedic:Medicament[];
 
   constructor(private ordonnanceService:OrdonnanceService, private medicamentService:MedicamentService) { }
 
   ngOnInit(): void {
     this.findAll();
+    //this.findAllMedic();
   }
 
   findAll() {
